@@ -637,7 +637,9 @@
                         "services": "Services",
                         "publications": "Actualités",
                         "contact": "Contact",
-                        "tel": "699 74 38 43"
+                        "tel": "620 133 885",
+                        "freelance_link": "Link to freelance",
+                        "become_freelance": "Devenir freelance"
                     }
                 },
                 "footer": {
@@ -668,7 +670,7 @@
                             },
                             "listen": "Nous sommes à l'écoute:",
                             "address": "Douala, Bonapriso, derrière Lycée Mongo Joseph",
-                            "phone": "+237 699 74 38 43",
+                            "phone": "+237 620 133 885",
                             "hours": "8h - 17h, Lundi à Samedi"
                         }
                     },
@@ -704,7 +706,7 @@
                                         "top": "Trouver la",
                                         "bottom": "pièce manquante"
                                     },
-                                    "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises."
+                                    "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala, Bonapriso au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises."
                                 },
                                 {
                                     "src": "\/images\/african-american-afro-american-analyzing-black-people-brainstorming-1434697-pxhere.com.jpg",
@@ -713,7 +715,7 @@
                                         "top": "Tenir",
                                         "bottom": "La promesse"
                                     },
-                                    "description": "Faciliter, organiser et sécuriser au moindre coût et sans délais, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances."
+                                    "description": "Faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances."
                                 },
                                 {
                                     "src": "\/images\/confident-woman.jpg",
@@ -762,9 +764,9 @@
                             },
                             "subtitle": "Qui sommes-nous?",
                             "photo": "\/images\/image-right9.png",
-                            "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises.",
+                            "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala, Bonapriso au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises.",
                             "mission_title": "Notre mission",
-                            "mission_description": "Faciliter, organiser et sécuriser au moindre coût et sans délais, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
+                            "mission_description": "Faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
                             "read_more": "En savoir plus"
                         },
                         "services": {
@@ -775,7 +777,7 @@
                                 "bottom": "Services"
                             },
                             "subtitle": "Nous donnons aux entreprises les clés de leur croissance",
-                            "view_all": "Voir tous les services"
+                            "view_all": "Voir toutes les de gammes de services"
                         },
                         "testimonies": {
                             "head": "Des opinions sur nos services",
@@ -831,7 +833,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Appelez-nous",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",
@@ -853,7 +855,7 @@
                             "photo": "\/images\/achievement-african-african-american-bangkok-black-bridge-1567129-pxhere.com.jpg",
                             "vision": "Notre <strong>vision</strong> est de rendre le conseil accessible à tous et sans délai",
                             "values": "Nous mettons un point d'honneur à être, en toutes circonstances objectifs et honnêtes dans les résultats que nous délivrons. Nous sommes un cabinet guidé par des valeurs fortes:<ul><li><strong>Culte de l'excellence:</strong> Une équipe d'experts professionnels et dynamiques, orientés résultats</li><li><strong>Transparence:</strong> Clarté, sécurité</li><li><strong>Proximité client:</strong> Ecoute</li></ul>",
-                            "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser au moindre coût et sans délais, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
+                            "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
                             "read_more": "En savoir plus"
                         },
                         "services": {
@@ -892,7 +894,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Appelez-nous",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",
@@ -937,7 +939,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Appelez-nous",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",
@@ -955,8 +957,8 @@
                         "services": {
                             "head": "Comment pouvons-nous vous aider",
                             "title": {
-                                "left": "Tous nos",
-                                "right": "Services"
+                                "left": "Toutes nos",
+                                "right": "gammes de services"
                             },
                             "centered": "true"
                         }
@@ -1647,7 +1649,9 @@
                         "services": "Services",
                         "publications": "News",
                         "contact": "Contact",
-                        "tel": "699 74 38 43"
+                        "tel": "620 133 885",
+                        "freelance_link": "Link to freelance",
+                        "become_freelance": "Become freelance"
                     }
                 },
                 "footer": {
@@ -1678,7 +1682,7 @@
                             },
                             "listen": "We are listening:",
                             "address": "Douala, Bonapriso, behind Lycée Mongo Joseph",
-                            "phone": "+237 699 74 38 43",
+                            "phone": "+237 620 133 885",
                             "hours": "8h - 17h, Monday to Saturday"
                         }
                     },
@@ -1841,7 +1845,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Call us",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",
@@ -1902,7 +1906,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Call us",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",
@@ -1947,7 +1951,7 @@
                                 {
                                     "icon": "headset",
                                     "title": "Call us",
-                                    "description": "+237 699 74 38 43"
+                                    "description": "+237 620 133 885"
                                 },
                                 {
                                     "icon": "envelope",

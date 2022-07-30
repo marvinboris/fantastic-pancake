@@ -42,6 +42,7 @@ class PublicationController extends Controller
             //     $join->on('admins.id', 'publications.author_id');
             //     $join->where('publications.author_type', '=', Admin::class);
             // })
+            ->join('publication_categories', 'publication_categories.id', '=', 'publications.publication_category_id')
             ->select('publications.*')
             ->when($search, function ($query, $search) {
                 if ($search !== "")
@@ -139,7 +140,7 @@ class PublicationController extends Controller
             'body' => json_encode($request->body),
         ]);
 
-        Notification::send(Subscriber::whereIsActive()->get(), new Newsletter($input + [
+        if ($request->is_active == 1) Notification::send(Subscriber::whereIsActive(1)->get(), new Newsletter($input + [
             'title' => $request->title[env('MIX_DEFAULT_LANG', 'fr')],
             'body' => $request->body[env('MIX_DEFAULT_LANG', 'fr')],
         ]));
@@ -174,6 +175,11 @@ class PublicationController extends Controller
             'title' => json_encode($request->title),
             'body' => json_encode($request->body),
         ]);
+
+        if ($publication->is_active == 0 && $request->is_active == 1) Notification::send(Subscriber::whereIsActive(1)->get(), new Newsletter($input + [
+            'title' => $request->title[env('MIX_DEFAULT_LANG', 'fr')],
+            'body' => $request->body[env('MIX_DEFAULT_LANG', 'fr')],
+        ]));
 
         return response()->json([
             'message' => UtilController::message($cms['pages'][$user->language->abbr]['messages']['publications']['updated'], 'success'),

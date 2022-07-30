@@ -28,7 +28,8 @@ export default ({ light = false, font, toggleNavbar, cms = {}, categories = [], 
                 </DropdownMenu>
             </UncontrolledDropdown>
             <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/contact">{cms.menu.contact}</NavigationItem>
-            <a href={'tel:' + cms.menu.tel} className="tel btn btn-green"><i className='fas fa-phone' />{cms.menu.tel}</a>
+            <a href={`tel:${cms.menu.tel}`} className="tel btn btn-green"><i className='fas fa-phone' />{cms.menu.tel}</a>
+            <a href={cms.menu.freelance_link} target="_blank" className="freelance btn btn-blue"><i className='fas fa-external-link-alt' />{cms.menu.become_freelance}</a>
         </Nav>
     </Navbar>;
 }

@@ -109,14 +109,14 @@ class FrontendController extends Controller
         $cms = UtilController::cms();
 
         $publications = [];
-        $filteredData = Publication::orderBy('id')->whereIsActive(1);
+        $filteredData = Publication::orderBy('id')->where('publication_categories.is_active', 1);
         if ($publicationCategorySlug) {
             $publication_category = PublicationCategory::whereSlug($publicationCategorySlug)->first();
             if (!$publication_category) return response()->json([
                 'message' => UtilController::message($cms['pages'][env('MIX_DEFAULT_LANG', 'fr')]['messages']['publication_categories']['not_found'], 'danger'),
             ]);
 
-            $filteredData = $publication_category->publications()->orderBy('id')->whereIsActive(1);
+            $filteredData = $publication_category->publications()->orderBy('id')->where('publications.is_active', 1);
         }
 
         $filteredData = $filteredData
@@ -160,12 +160,12 @@ class FrontendController extends Controller
     {
         $cms = UtilController::cms();
 
-        $publication_category = PublicationCategory::whereSlug($publicationCategorySlug)->first();
+        $publication_category = PublicationCategory::whereSlug($publicationCategorySlug)->where('publication_categories.is_active', 1)->first();
         if (!$publication_category) return response()->json([
             'message' => UtilController::message($cms['pages'][env('MIX_DEFAULT_LANG', 'fr')]['messages']['publication_categories']['not_found'], 'danger'),
         ]);
 
-        $publication = $publication_category->publications()->whereIsActive(1)->whereSlug($slug)->first();
+        $publication = $publication_category->publications()->where('publications.is_active', 1)->whereSlug($slug)->first();
         if (!$publication) return response()->json([
             'message' => UtilController::message($cms['pages'][env('MIX_DEFAULT_LANG', 'fr')]['messages']['publications']['not_found'], 'danger'),
         ]);
