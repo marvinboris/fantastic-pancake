@@ -321,6 +321,8 @@ export default {
             "form": {
                 "name": "Pr\u00e9nom",
                 "email": "Adresse mail",
+                "is_active": "Statut",
+                "select_status": "S\u00e9lectionner le statut",
                 "created_at": "Cr\u00e9\u00e9e le"
             }
         },
@@ -335,6 +337,8 @@ export default {
                 "body": "Contenu",
                 "icon": "Icône",
                 "language": "Langue",
+                "is_active": "Statut",
+                "select_status": "S\u00e9lectionner le statut",
                 "created_at": "Cr\u00e9\u00e9 le"
             }
         },
@@ -386,6 +390,7 @@ export default {
                 "photo": "Photo",
                 "partner_photo": "Photo du partenaire",
                 "is_active": "Statut",
+                "select_status": "S\u00e9lectionner le statut",
                 "created_at": "Cr\u00e9\u00e9 le"
             }
         }
