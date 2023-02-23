@@ -1,0 +1,37 @@
+.Frontend .References {
+    section {
+        background-color: var(--white);
+
+        &.about {
+            img {
+                margin-bottom: 20px;
+            }
+
+            p {
+                ul {
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+
+        &.team {
+            background-repeat: repeat;
+            background-position: center;
+            background-color: var(--soft);
+            background-image: url('/images/cta_bg.png');
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .Frontend .References {
+        section {
+            &.about {
+                img {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

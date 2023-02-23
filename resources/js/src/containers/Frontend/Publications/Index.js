@@ -32,7 +32,7 @@ class Publications extends Component {
         const publicationsContent = publications.map(publication => <PublicationView key={JSON.stringify(publication)} {...publication} />);
 
         return <div className="Publications">
-            <PageTitle {...cms} />
+            {/* <PageTitle {...cms} /> */}
 
             <section className='publications'>
                 <div className='container'>

@@ -60,6 +60,7 @@ class Layout extends Component {
                                 <div className='content'>
                                     <div><i className='fas fa-fw fa-building' />{footer.top.contact.address}</div>
                                     <div><i className='fas fa-fw fa-phone' />{footer.top.contact.phone}</div>
+                                    <div><i className='fas fa-fw fa-envelope' />{footer.top.contact.email}</div>
                                     <div><i className='fas fa-fw fa-clock' />{footer.top.contact.hours}</div>
                                 </div>
                             </div>

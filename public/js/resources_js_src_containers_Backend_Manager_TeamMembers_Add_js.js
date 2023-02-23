@@ -1436,6 +1436,7 @@ var Add = /*#__PURE__*/function (_Component) {
       var _this$state = this.state,
           name = _this$state.name,
           job = _this$state.job,
+          photo = _this$state.photo,
           is_active = _this$state.is_active,
           translate = _this$state.translate;
       var content;

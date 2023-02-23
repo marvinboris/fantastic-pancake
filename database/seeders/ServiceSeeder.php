@@ -32,7 +32,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'title' => json_encode(['fr' => 'Gestion mandatée']),
-                'body' => json_encode(['fr' => 'Prestation au cours de laquelle notre client, nous donne pouvoir de gérer tout ou une partie de son activité.']),
+                'body' => json_encode(['fr' => 'Agir pour le compte de notre client qui nous donne le pouvoir de gérer tout ou une partie de son activité.']),
                 'icon' => 'globe-africa',
             ],
             [

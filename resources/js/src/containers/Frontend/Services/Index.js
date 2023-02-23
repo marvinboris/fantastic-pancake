@@ -31,7 +31,7 @@ class Services extends Component {
         const publicationsContent = services.map(service => <div className='col-md-6 col-xxl-4' key={JSON.stringify(service)}><ServiceBlock {...service} /></div>);
 
         return <div className="Services">
-            <PageTitle {...cms} />
+            {/* <PageTitle {...cms} /> */}
 
             <section className='services'>
                 <div className='container'>

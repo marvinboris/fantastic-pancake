@@ -202,6 +202,7 @@ Route::name('frontend.')->group(function () {
     Route::post('quote', 'FrontendController@quote')->name('quote');
     Route::post('contact', 'FrontendController@contact')->name('contact');
     Route::post('newsletter', 'FrontendController@newsletter')->name('newsletter');
+    Route::get('references', 'FrontendController@references')->name('references');
     Route::get('about', 'FrontendController@about')->name('about');
     Route::get('home', 'FrontendController@home')->name('home');
 });

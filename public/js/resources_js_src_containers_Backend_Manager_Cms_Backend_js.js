@@ -583,6 +583,8 @@ __webpack_require__.r(__webpack_exports__);
       "form": {
         "name": "Pr\xE9nom",
         "email": "Adresse mail",
+        "is_active": "Statut",
+        "select_status": "S\xE9lectionner le statut",
         "created_at": "Cr\xE9\xE9e le"
       }
     },
@@ -597,6 +599,8 @@ __webpack_require__.r(__webpack_exports__);
         "body": "Contenu",
         "icon": "Icône",
         "language": "Langue",
+        "is_active": "Statut",
+        "select_status": "S\xE9lectionner le statut",
         "created_at": "Cr\xE9\xE9 le"
       }
     },
@@ -648,6 +652,7 @@ __webpack_require__.r(__webpack_exports__);
         "photo": "Photo",
         "partner_photo": "Photo du partenaire",
         "is_active": "Statut",
+        "select_status": "S\xE9lectionner le statut",
         "created_at": "Cr\xE9\xE9 le"
       }
     }

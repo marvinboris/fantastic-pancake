@@ -77,7 +77,7 @@ class About extends Component {
         const teamContent = team.map(member => <TeamMemberBlock key={JSON.stringify(member)} {...{ ...member, job: member.job[lang] }} />);
 
         return <div className="About">
-            <PageTitle {...cms} />
+            {/* <PageTitle {...cms} /> */}
 
             <section className='about'>
                 <div className='container'>
@@ -101,6 +101,32 @@ class About extends Component {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="col-md-4">
+                            <p dangerouslySetInnerHTML={{ __html: cms.about.expertise }} />
+                        </div>
+
+                        <div className="col-md-4">
+                            <p dangerouslySetInnerHTML={{ __html: cms.about.services }} />
+                        </div>
+
+                        <div className="col-md-4">
+                            <p dangerouslySetInnerHTML={{ __html: cms.about.expertise }} />
+                        </div>
+
+                        <div className="col-12">
+                            <div dangerouslySetInnerHTML={{ __html: cms.about.supports.title }} />
+
+                            <div className="row">
+                                {cms.about.supports.elements.map(element =>
+                                    <div key={element} className="col-md-4" dangerouslySetInnerHTML={{ __html: element }} />
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="col-12">
+                            <p dangerouslySetInnerHTML={{ __html: cms.about.details }} />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -113,7 +139,7 @@ class About extends Component {
                 </div>
             </section>
 
-            <section className='services'>
+            {/* <section className='services'>
                 <div className='container'>
                     <SectionTitle {...cms.services} />
 
@@ -121,7 +147,7 @@ class About extends Component {
                         {servicesContent}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='contact'>
                 <div className='container'>

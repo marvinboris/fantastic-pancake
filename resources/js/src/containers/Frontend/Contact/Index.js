@@ -58,7 +58,7 @@ class Contact extends Component {
         const { name, email, message } = this.state;
 
         return <div className="Contact">
-            <PageTitle {...cms} />
+            {/* <PageTitle {...cms} /> */}
 
             <section className='contact'>
                 <div className='container'>
@@ -66,7 +66,7 @@ class Contact extends Component {
                         <div className='col-lg-6'>
                             <SectionTitle {...cms.contact} />
 
-                            <p>{cms.contact.description}</p>
+                            {/* <p>{cms.contact.description}</p> */}
                         </div>
 
                         <div className='col-lg-6'>

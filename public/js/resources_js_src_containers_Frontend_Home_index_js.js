@@ -230,7 +230,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _shared_utility__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../shared/utility */ "./resources/js/src/shared/utility.js");
 /* harmony import */ var _ServiceBlock_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ServiceBlock.scss */ "./resources/js/src/components/Frontend/UI/Blocks/ServiceBlock/ServiceBlock.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -303,8 +302,7 @@ var ServiceBlock = /*#__PURE__*/function (_Component) {
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
             className: "text",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
-              to: link,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
               className: "title",
               children: title[lang]
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
@@ -369,6 +367,54 @@ __webpack_require__.r(__webpack_exports__);
     })]
   });
 });
+
+/***/ }),
+
+/***/ "./resources/js/src/components/Frontend/UI/Blocks/TestimonyBlock/index.js":
+/*!********************************************************************************!*\
+  !*** ./resources/js/src/components/Frontend/UI/Blocks/TestimonyBlock/index.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TestimonyBlock)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function TestimonyBlock(_ref) {
+  var title = _ref.title,
+      body = _ref.body,
+      name = _ref.name,
+      company = _ref.company,
+      photo = _ref.photo;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    className: "TestimonyBlock",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "img",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "bg-img",
+        style: {
+          backgroundImage: "url(\"".concat(photo, "\")")
+        }
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "title",
+      children: title
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "body",
+      children: body
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "name",
+      children: name
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "company",
+      children: company
+    })]
+  });
+}
 
 /***/ }),
 
@@ -950,6 +996,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     next: next,
     previous: previous,
     ride: "carousel",
+    pause: "hover",
+    interval: 10000,
     className: "h-100 carousel-fade Carousel",
     children: [slides, children]
   });
@@ -1313,19 +1361,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Carousel */ "./resources/js/src/containers/Frontend/Home/Carousel/index.js");
 /* harmony import */ var _Quote__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Quote */ "./resources/js/src/containers/Frontend/Home/Quote/index.js");
-/* harmony import */ var _components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/Frontend/UI/Title/SectionTitle */ "./resources/js/src/components/Frontend/UI/Title/SectionTitle/index.js");
-/* harmony import */ var _components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/ServiceBlock */ "./resources/js/src/components/Frontend/UI/Blocks/ServiceBlock/index.js");
-/* harmony import */ var _components_Frontend_UI_Blocks_PublicationBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/PublicationBlock */ "./resources/js/src/components/Frontend/UI/Blocks/PublicationBlock/index.js");
-/* harmony import */ var _components_Frontend_UI_Blocks_TeamMemberBlock__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/TeamMemberBlock */ "./resources/js/src/components/Frontend/UI/Blocks/TeamMemberBlock/index.js");
-/* harmony import */ var _components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/UI/OwlCarousel */ "./resources/js/src/components/UI/OwlCarousel/index.js");
-/* harmony import */ var _store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../store/actions/frontend/home */ "./resources/js/src/store/actions/frontend/home.js");
-/* harmony import */ var _Home_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Home.scss */ "./resources/js/src/containers/Frontend/Home/Home.scss");
-/* harmony import */ var _components_Backend_UI_List_Photo_View__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../components/Backend/UI/List/Photo/View */ "./resources/js/src/components/Backend/UI/List/Photo/View/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Backend_UI_List_Photo_View__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/Backend/UI/List/Photo/View */ "./resources/js/src/components/Backend/UI/List/Photo/View/index.js");
+/* harmony import */ var _components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/Frontend/UI/Title/SectionTitle */ "./resources/js/src/components/Frontend/UI/Title/SectionTitle/index.js");
+/* harmony import */ var _components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/ServiceBlock */ "./resources/js/src/components/Frontend/UI/Blocks/ServiceBlock/index.js");
+/* harmony import */ var _components_Frontend_UI_Blocks_PublicationBlock__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/PublicationBlock */ "./resources/js/src/components/Frontend/UI/Blocks/PublicationBlock/index.js");
+/* harmony import */ var _components_Frontend_UI_Blocks_TeamMemberBlock__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/TeamMemberBlock */ "./resources/js/src/components/Frontend/UI/Blocks/TeamMemberBlock/index.js");
+/* harmony import */ var _components_Frontend_UI_Blocks_TestimonyBlock__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/TestimonyBlock */ "./resources/js/src/components/Frontend/UI/Blocks/TestimonyBlock/index.js");
+/* harmony import */ var _components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../components/UI/OwlCarousel */ "./resources/js/src/components/UI/OwlCarousel/index.js");
+/* harmony import */ var _store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../store/actions/frontend/home */ "./resources/js/src/store/actions/frontend/home.js");
+/* harmony import */ var _Home_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Home.scss */ "./resources/js/src/containers/Frontend/Home/Home.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -1370,65 +1419,34 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var BlocksBlock = function BlocksBlock(_ref) {
   var cms = _ref.cms;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
     className: "BlocksBlock",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
       className: "bg-img shadow",
       style: {
         backgroundImage: "linear-gradient(30deg, rgba(255,255,255,.8) 50%, transparent), url(\"".concat(cms.photo, "\")")
       },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
         className: "super",
         children: cms["super"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
         className: "title",
         children: cms.title
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
         className: "description",
         children: cms.description
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
         className: "link",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Link, {
           to: cms.link,
           className: "btn btn-green",
           children: cms.button
         })
       })]
     })
-  });
-};
-
-var TestimonyBlock = function TestimonyBlock(_ref2) {
-  var title = _ref2.title,
-      body = _ref2.body,
-      name = _ref2.name,
-      company = _ref2.company,
-      photo = _ref2.photo;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
-    className: "TestimonyBlock",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-      className: "img",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-        className: "bg-img",
-        style: {
-          backgroundImage: "url(\"".concat(photo, "\")")
-        }
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-      className: "title",
-      children: title
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-      className: "body",
-      children: body
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-      className: "name",
-      children: name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-      className: "company",
-      children: company
-    })]
   });
 };
 
@@ -1498,7 +1516,9 @@ var Home = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this$props = this.props,
           _this$props$content = _this$props.content,
-          cms = _this$props$content.cms.pages.frontend.pages.home,
+          _this$props$content$c = _this$props$content.cms.pages.frontend,
+          menu = _this$props$content$c.header.menu,
+          cms = _this$props$content$c.pages.home,
           services = _this$props$content.services,
           _this$props$frontend$ = _this$props.frontend.home,
           _this$props$frontend$2 = _this$props$frontend$.testimonies,
@@ -1511,179 +1531,192 @@ var Home = /*#__PURE__*/function (_Component) {
           team = _this$props$frontend$5 === void 0 ? [] : _this$props$frontend$5;
       var lang = localStorage.getItem('lang');
       var blocksContent = cms.blocks.items.map(function (item) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
           className: "col-md-6 col-lg-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(BlocksBlock, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(BlocksBlock, {
             cms: item
           })
         }, JSON.stringify(item));
       });
       var servicesContent = services.map(function (service) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
           className: "col-md-6 col-lg-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, service))
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_6__["default"], _objectSpread({}, service))
         }, JSON.stringify(service));
       });
       var testimoniesContent = testimonies.map(function (testimony) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(TestimonyBlock, _objectSpread({}, _objectSpread(_objectSpread({}, testimony), {}, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Blocks_TestimonyBlock__WEBPACK_IMPORTED_MODULE_9__["default"], _objectSpread({}, _objectSpread(_objectSpread({}, testimony), {}, {
           company: testimony.company[lang],
           title: testimony.title[lang],
           body: testimony.body[lang]
         })), JSON.stringify(testimony));
       });
       var publicationsContent = publications.map(function (publication) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Blocks_PublicationBlock__WEBPACK_IMPORTED_MODULE_6__["default"], _objectSpread({}, publication), JSON.stringify(publication));
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Blocks_PublicationBlock__WEBPACK_IMPORTED_MODULE_7__["default"], _objectSpread({}, publication), JSON.stringify(publication));
       });
       var partnersContent = partners.map(function (partner) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("img", {
             src: partner.photo,
             alt: partner.name
           })
         }, JSON.stringify(partner));
       });
       var teamContent = team.map(function (member) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Blocks_TeamMemberBlock__WEBPACK_IMPORTED_MODULE_7__["default"], _objectSpread({}, _objectSpread(_objectSpread({}, member), {}, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Blocks_TeamMemberBlock__WEBPACK_IMPORTED_MODULE_8__["default"], _objectSpread({}, _objectSpread(_objectSpread({}, member), {}, {
           job: member.job[lang]
         })), JSON.stringify(member));
       });
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
         className: "Home",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
           className: "banner",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-            className: "banner__container",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-              className: "banner__text container",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("img", {
+            src: cms.banner.carousel[0].src,
+            alt: "Home Banner"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+            className: "d-flex align-items-center",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              className: "container",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                 className: "row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                  className: "col-md-6 left",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                  className: "col-md-6",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                     className: "content",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                       className: "super",
                       children: cms.banner.carousel[0].head
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                       className: "title",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                         className: "top",
                         children: cms.banner.carousel[0].title.top
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                         className: "bottom",
                         children: cms.banner.carousel[0].title.bottom
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                       className: "description",
                       children: cms.banner.carousel[0].description
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                      className: "vector"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                       className: "buttons",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Link, {
                         to: '/about',
                         className: "about btn btn-green",
-                        children: [cms.banner.about, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
+                        children: [cms.banner.about, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("i", {
                           className: "fas fa-address-card"
                         })]
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Link, {
                         to: '/services',
                         className: "btn btn-blue",
-                        children: [cms.banner.services, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
+                        children: [cms.banner.services, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("i", {
                           className: "fas fa-concierge-bell"
                         })]
                       })]
                     })]
                   })
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                  className: "col-md-6 right",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
-                    className: "content",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                      className: "super",
-                      children: cms.banner.carousel[0].head
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
-                      className: "title",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                        className: "top",
-                        children: cms.banner.carousel[0].title.top
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                        className: "bottom",
-                        children: cms.banner.carousel[0].title.bottom
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                  className: "col-md-6",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+                    className: "bg-white rounded-lg p-4",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                      className: "d-flex justify-content-end",
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                        className: "rounded-pill bg-black-70 embed-responsive embed-responsive-1by1",
+                        style: {
+                          width: 28
+                        }
+                      })
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+                      className: "position-relative mb-3",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                        className: "h3 text-dark mb-3",
+                        children: "Travaillez avec nous en mode freelance"
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                        className: "bg-green rounded-pill",
+                        style: {
+                          width: 53,
+                          height: 8
+                        }
                       })]
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-                      className: "description",
-                      children: cms.banner.carousel[0].description
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
-                      className: "buttons",
-                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
-                        to: '/about',
-                        className: "about btn btn-green",
-                        children: [cms.banner.about, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
-                          className: "fas fa-address-card"
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+                      className: "mb-4",
+                      children: "Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d\u2019une part des  professionels en capacites d\u2019autres part, des organisations en besoin d\u2019accompagnement l\u2019amelioration de leurs performances."
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("a", {
+                        href: menu.freelance_link,
+                        target: "_blank",
+                        className: "btn btn-green btn-block mb-3",
+                        children: ["Je veux travailler", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("i", {
+                          className: "far fa-briefcase"
                         })]
-                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
-                        to: '/services',
-                        className: "btn btn-blue",
-                        children: [cms.banner.services, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
-                          className: "fas fa-concierge-bell"
-                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Backend_UI_List_Photo_View__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                        content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Quote__WEBPACK_IMPORTED_MODULE_3__["default"], {}),
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("button", {
+                          className: "btn btn-blue btn-block",
+                          children: "J'ai besoin d'un professionnel"
+                        })
                       })]
                     })]
                   })
                 })]
               })
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Carousel__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            items: cms.banner.carousel
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+          className: "blue-bar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "blocks",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "container",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
               className: "row",
               children: blocksContent
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "services",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.services)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.services)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
               className: "row",
               children: servicesContent
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
               className: "view-all",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Link, {
                 to: '/services',
                 className: "btn btn-blue",
-                children: [cms.services.view_all, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
+                children: [cms.services.view_all, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("i", {
                   className: 'fas fa-' + cms.services.icon
                 })]
               })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "about",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "container",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
               className: "row",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                 className: "col-md-5 col-lg-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("img", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("img", {
                   src: cms.about.photo,
                   className: "img-fluid"
                 })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                 className: "col-md-7 col-lg-8",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.about)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("p", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.about)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
                   dangerouslySetInnerHTML: {
                     __html: cms.about.description
                   }
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                   className: "mission-title",
                   children: cms.about.mission_title
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("p", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("p", {
                   dangerouslySetInnerHTML: {
                     __html: cms.about.mission_description
                   }
@@ -1691,11 +1724,11 @@ var Home = /*#__PURE__*/function (_Component) {
               })]
             })
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "testimonies",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.testimonies)), testimonies.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.testimonies)), testimonies.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_10__["default"], {
               ref: "testimonies-carousel",
               options: {
                 responsive: {
@@ -1716,11 +1749,11 @@ var Home = /*#__PURE__*/function (_Component) {
               children: testimoniesContent
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "team",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.team)), team.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.team)), team.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_UI_OwlCarousel__WEBPACK_IMPORTED_MODULE_10__["default"], {
               ref: "team-carousel",
               options: {
                 responsive: {
@@ -1743,33 +1776,33 @@ var Home = /*#__PURE__*/function (_Component) {
               children: teamContent
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "quote",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.quote)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Backend_UI_List_Photo_View__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.quote)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Backend_UI_List_Photo_View__WEBPACK_IMPORTED_MODULE_4__["default"], {
                 title: cms.quote.form.title,
-                content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_Quote__WEBPACK_IMPORTED_MODULE_3__["default"], {}),
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("button", {
+                content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_Quote__WEBPACK_IMPORTED_MODULE_3__["default"], {}),
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("button", {
                   className: "btn btn-green",
                   children: cms.quote.get
                 })
               })
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("section", {
           className: "publications",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, cms.publications)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_5__["default"], _objectSpread({}, cms.publications)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
               className: "row",
               children: publicationsContent
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("section", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("section", {
           className: "map",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("iframe", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("iframe", {
             src: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15919.909280908641!2d9.7019373!3d4.0250381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe28d53dbf8cebb4d!2sMAHOL%20CONSULTING!5e0!3m2!1sfr!2scm!4v1656832382871!5m2!1sfr!2scm",
             style: {
               border: 0
@@ -1777,46 +1810,46 @@ var Home = /*#__PURE__*/function (_Component) {
             allowFullScreen: "",
             loading: "lazy",
             referrerPolicy: "no-referrer-when-downgrade"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
             className: "info",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
               className: "container",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                 className: "row",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                   className: "col-md-4",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                     className: "head",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                       className: "super",
                       children: cms.map.offices
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                       className: "title",
                       children: cms.map.get_in_touch
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                     children: cms.map.come_and_visit
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                   className: "col-md-8",
-                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                     className: "row",
                     children: cms.map.blocks.map(function (block) {
-                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                         className: "UI ServiceBlock col-md-4",
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                           className: "info",
-                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                             className: "icon",
-                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("i", {
+                            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("i", {
                               className: 'fas fa-' + block.icon
                             })
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)("div", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxs)("div", {
                             className: "text",
-                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                               className: "title",
                               children: block.title
-                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+                            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__.jsx)("div", {
                               className: "body",
                               children: block.description
                             })]
@@ -1844,21 +1877,21 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     get: function get() {
-      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_9__.getHome)());
+      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_11__.getHome)());
     },
     newsletter: function newsletter(data) {
-      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_9__.postNewsletter)(data));
+      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_11__.postNewsletter)(data));
     },
     subscribe: function subscribe(data) {
-      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_9__.postSubscribe)(data));
+      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_11__.postSubscribe)(data));
     },
     reset: function reset() {
-      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_9__.resetHome)());
+      return dispatch((0,_store_actions_frontend_home__WEBPACK_IMPORTED_MODULE_11__.resetHome)());
     }
   };
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_14__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(Home)));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_15__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(Home)));
 
 /***/ }),
 
@@ -2318,7 +2351,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Frontend .Home .banner {\n  z-index: 0;\n  max-height: 800px;\n  position: relative;\n  height: calc(100vh - var(--toolbar-bottom-height-sm));\n}\n.Frontend .Home .banner .banner__container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 10;\n  background-color: var(--white-70);\n}\n.Frontend .Home .banner .banner__container .banner__text {\n  height: 100%;\n  display: flex;\n  position: relative;\n  flex-direction: column;\n}\n.Frontend .Home .banner .banner__container .banner__text .row {\n  flex-grow: 1;\n  flex-direction: column;\n  justify-content: center;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left,\n.Frontend .Home .banner .banner__container .banner__text .row .right {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content {\n  display: flex;\n  max-width: 100%;\n  flex-direction: column;\n  width: 100% !important;\n  justify-content: center;\n  border-radius: var(--border-radius);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title {\n  width: 100%;\n  display: block;\n  font-size: var(--banner-font-size-sm);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title .top,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title .top {\n  color: var(--blue);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title .bottom,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title .bottom {\n  color: var(--green);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .description,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .description {\n  width: 100%;\n  display: block;\n  font-size: 18px;\n  margin-top: 23.4px;\n  margin-bottom: 50px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a {\n  font-size: 14px;\n  margin-bottom: 3.5px;\n  padding: 15.75px 26.25px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a.about,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a.about {\n  margin-right: 7px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a i,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a i {\n  display: none;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .right .content {\n  display: none;\n}\n.Frontend .Home section {\n  background-color: var(--white);\n}\n.Frontend .Home section > .container img {\n  border-radius: var(--border-radius);\n}\n.Frontend .Home section > .container .owl-dots .owl-dot {\n  margin: 4px;\n}\n.Frontend .Home section > .container .owl-dots .owl-dot span {\n  background-color: var(--white-50);\n}\n.Frontend .Home section > .container .owl-dots .owl-dot.active span {\n  width: 22px;\n  height: 22px;\n  background-color: var(--blue);\n  border: 4px solid var(--white);\n}\n.Frontend .Home section > .container .view-all {\n  text-align: center;\n}\n.Frontend .Home section.services, .Frontend .Home section.newsletter, .Frontend .Home section.team {\n  background-color: var(--blue-10);\n}\n.Frontend .Home section.blocks {\n  z-index: 2;\n}\n.Frontend .Home section.blocks .container {\n  top: -32px;\n  padding-top: 0;\n  padding-bottom: 0;\n  position: relative;\n}\n.Frontend .Home section.blocks .container .BlocksBlock {\n  margin-bottom: 1rem;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img {\n  padding: 61.25px 28px 28px 28px;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .super {\n  font-size: 15px;\n  margin-bottom: 9px;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .title {\n  color: var(--blue);\n  margin-bottom: 19.5px;\n  font-size: var(--block-font-size);\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .description {\n  height: auto;\n  font-size: 15px;\n  margin-bottom: 14px;\n  line-height: 22.5px;\n}\n.Frontend .Home section.services {\n  background-repeat: repeat;\n  background-position: center;\n  background-image: url(\"/images/bg.png\");\n}\n.Frontend .Home section.about img {\n  margin-bottom: 15px;\n}\n.Frontend .Home section.about p {\n  margin-bottom: 20px;\n}\n.Frontend .Home section.about .mission-title {\n  font-weight: 800;\n}\n.Frontend .Home section.about .actions a,\n.Frontend .Home section.about .actions button {\n  margin-top: 10px;\n}\n.Frontend .Home section.newsletter {\n  background-size: cover;\n  background-position: center;\n  background-image: url(\"/images/cta_bg.png\");\n}\n.Frontend .Home section.newsletter p {\n  text-align: center;\n}\n.Frontend .Home section.newsletter form {\n  padding: 40px;\n  color: var(--white);\n  justify-content: center;\n  background-color: var(--blue);\n  border-radius: var(--border-radius);\n}\n.Frontend .Home section.newsletter form .submit {\n  margin-top: 20px;\n  text-align: center;\n}\n.Frontend .Home section.testimonies {\n  background-size: cover;\n  background-position: center;\n  background-color: var(--blue);\n  background-image: url(\"/images/cta_bg.png\");\n}\n.Frontend .Home section.testimonies .SectionTitle .super,\n.Frontend .Home section.testimonies .SectionTitle .top {\n  color: var(--white);\n}\n.Frontend .Home section.testimonies .TestimonyBlock {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .img {\n  margin-bottom: 20px;\n  transition: all 0.25s;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .img div {\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  transition: all 0.25s;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .title {\n  color: var(--green);\n  margin-bottom: 10px;\n  text-align: center;\n  font-size: var(--block-font-size);\n}\n.Frontend .Home section.testimonies .TestimonyBlock .body {\n  font-size: 14px;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .name {\n  font-size: 14px;\n  color: var(--white);\n  margin-bottom: 10px;\n  text-transform: uppercase;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .company {\n  font-size: 20px;\n  font-weight: 800;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n.Frontend .Home section.partners {\n  background-color: var(--soft);\n}\n.Frontend .Home section.partners .container div {\n  text-align: center;\n}\n.Frontend .Home section.partners .container div img {\n  width: auto;\n  height: 60px;\n}\n.Frontend .Home section.quote {\n  background-size: cover;\n  background-position: center;\n  background-color: var(--blue);\n  background-image: url(\"/images/quote_bg_texture.png\");\n}\n.Frontend .Home section.quote .container {\n  display: flex;\n  text-align: center;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.Frontend .Home section.quote .container .SectionTitle {\n  margin-bottom: 20px;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .super {\n  font-size: 1rem;\n  color: var(--white);\n  justify-content: center;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .super::after {\n  content: \"\";\n  flex-grow: 0;\n  width: 2.5rem;\n  display: block;\n  flex-shrink: 0;\n  margin-top: -1px;\n  margin-bottom: 0;\n  margin-left: 10px;\n  border-top: 2px solid var(--green);\n}\n.Frontend .Home section.quote .container .SectionTitle .text .title {\n  font-size: 36px;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .title .left {\n  color: var(--white);\n}\n.Frontend .Home section.quote .container button {\n  white-space: nowrap;\n}\n.Frontend .Home section.publications .PublicationBlock {\n  margin: 0 15px;\n  flex: 0 0 calc(100% - 30px);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child {\n  flex: 0 0 calc(100% - 30px);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text {\n  background-color: transparent;\n  background-image: linear-gradient(to top, var(--black), transparent);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .title {\n  color: var(--white);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .title:hover {\n  color: var(--green);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .body {\n  color: var(--white);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .read-more:hover {\n  color: var(--white);\n}\n.Frontend .Home section.map {\n  display: flex;\n  height: 700px;\n  position: relative;\n  flex-direction: column;\n}\n.Frontend .Home section.map iframe {\n  z-index: 1;\n  width: 100%;\n  flex-grow: 1;\n}\n.Frontend .Home section.map > .info {\n  bottom: 0;\n  width: 100%;\n  z-index: 990;\n  position: static;\n}\n.Frontend .Home section.map > .info .container {\n  display: flex;\n  border-radius: 0;\n  min-height: 205px;\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n  flex-direction: column;\n  justify-content: center;\n  background-color: var(--white);\n}\n.Frontend .Home section.map > .info .container > .row {\n  align-items: flex-end;\n}\n.Frontend .Home section.map > .info .container > .row .head .super {\n  font-size: 15px;\n}\n.Frontend .Home section.map > .info .container > .row .head .title {\n  color: var(--blue);\n  margin-bottom: 20px;\n  font-size: var(--block-font-size);\n  line-height: var(--block-font-size);\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock {\n  margin-top: 1rem;\n  margin-bottom: 0;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .icon {\n  font-size: 40px;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .title {\n  margin-bottom: 11.2px;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .body {\n  min-height: auto;\n  text-align: left;\n}\n\n@media (min-width: 1000px) {\n  .Frontend .Home .banner {\n    height: calc(100vh - var(--toolbar-top-height) - var(--toolbar-bottom-height));\n  }\n  .Frontend .Home .banner .banner__container {\n    background-position: 0% 0%;\n    background-size: 200% 100%;\n    background-repeat: no-repeat;\n    background-color: transparent;\n    background-image: linear-gradient(to right, var(--white-80) 10%, transparent, var(--white-80) 80%);\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row {\n    align-items: center;\n    flex-direction: row;\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row .title {\n    margin-bottom: 20px;\n    font-size: var(--banner-font-size-md);\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row .description {\n    margin-bottom: 30px;\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row a {\n    font-size: 1rem;\n    padding: 18px 30px;\n  }\n  .Frontend .Home section.blocks .container .BlocksBlock {\n    margin-bottom: 0;\n  }\n  .Frontend .Home section.blocks .container .BlocksBlock .description {\n    height: 70px !important;\n  }\n  .Frontend .Home section.about p {\n    margin-bottom: 20px;\n  }\n  .Frontend .Home section.about .actions a,\n.Frontend .Home section.about .actions button {\n    margin-top: 10px;\n  }\n  .Frontend .Home section.about .actions .donate,\n.Frontend .Home section.about .actions .join {\n    margin-right: 15px;\n  }\n  .Frontend .Home section.newsletter form .submit {\n    margin-top: 30px;\n  }\n  .Frontend .Home section.quote .container {\n    text-align: left;\n    flex-direction: row;\n  }\n  .Frontend .Home section.quote .container .SectionTitle {\n    margin-bottom: 0;\n  }\n  .Frontend .Home section.quote .container .SectionTitle .text .super {\n    justify-content: flex-start;\n  }\n  .Frontend .Home section.quote .container .SectionTitle .text .super::after {\n    display: none;\n  }\n  .Frontend .Home section.publications .PublicationBlock {\n    flex: 0 0 calc(25% - 30px);\n  }\n  .Frontend .Home section.publications .PublicationBlock:first-child {\n    flex: 0 0 calc(50% - 30px);\n  }\n  .Frontend .Home section.map > .info {\n    bottom: 2rem;\n    position: absolute;\n  }\n  .Frontend .Home section.map > .info .container {\n    padding-top: 0;\n    padding-bottom: 0;\n    border-radius: var(--border-radius);\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock {\n    margin-top: 0;\n    padding-left: 0;\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock .title {\n    margin-bottom: 11px;\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock .body {\n    height: 60px;\n  }\n}\n@media (min-width: 1280px) {\n  .Frontend .Home .banner {\n    height: calc(100vh - var(--toolbar-top-height) - var(--toolbar-bottom-height));\n  }\n  .Frontend .Home .banner .banner__text .title {\n    margin-bottom: 25px;\n    font-size: var(--banner-font-size);\n  }\n  .Frontend .Home .banner .banner__text .description {\n    margin-bottom: 40px;\n  }\n  .Frontend .Home section.about p {\n    margin-bottom: 30px;\n  }\n  .Frontend .Home section.newsletter form .submit {\n    margin-top: 40px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Frontend .Home .banner {\n  z-index: 0;\n  max-height: 800px;\n  position: relative;\n  height: calc(100vh - var(--toolbar-bottom-height-sm));\n}\n.Frontend .Home .banner > img {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 0;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}\n.Frontend .Home .banner > div {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  background-color: var(--black-60);\n  padding-top: 186px;\n}\n.Frontend .Home .banner > div .col-md-6 .content {\n  color: var(--white);\n}\n.Frontend .Home .banner > div .col-md-6 .content .super {\n  color: var(--green);\n  font-weight: 500;\n  font-size: 20px;\n}\n.Frontend .Home .banner > div .col-md-6 .content .title {\n  font-weight: 700;\n  font-size: 48px;\n  margin-bottom: 20px;\n}\n.Frontend .Home .banner > div .col-md-6 .content .vector {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n  margin-bottom: 48px;\n}\n.Frontend .Home .banner > div .col-md-6 .content .vector::before {\n  content: \"\";\n  display: block;\n  width: 12px;\n  height: 12px;\n  background-color: var(--white);\n  border-radius: 300px;\n}\n.Frontend .Home .banner > div .col-md-6 .content .vector::after {\n  content: \"\";\n  display: block;\n  height: 3px;\n  width: 150px;\n  background-image: linear-gradient(to right, var(--white), transparent);\n}\n.Frontend .Home .banner > div .col-md-6 .bg-white.rounded-lg {\n  margin: auto;\n  top: 48px;\n  position: relative;\n  width: min(350px, 100%);\n}\n.Frontend .Home .banner .banner__container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 10;\n  background-color: var(--white-70);\n}\n.Frontend .Home .banner .banner__container .banner__text {\n  height: 100%;\n  display: flex;\n  position: relative;\n  flex-direction: column;\n}\n.Frontend .Home .banner .banner__container .banner__text .row {\n  flex-grow: 1;\n  flex-direction: column;\n  justify-content: center;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left,\n.Frontend .Home .banner .banner__container .banner__text .row .right {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content {\n  display: flex;\n  max-width: 100%;\n  flex-direction: column;\n  width: 100% !important;\n  justify-content: center;\n  border-radius: var(--border-radius);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title {\n  width: 100%;\n  display: block;\n  font-size: var(--banner-font-size-sm);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title .top,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title .top {\n  color: var(--blue);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .title .bottom,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .title .bottom {\n  color: var(--green);\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content .description,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content .description {\n  width: 100%;\n  display: block;\n  font-size: 18px;\n  margin-top: 23.4px;\n  margin-bottom: 50px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a {\n  font-size: 14px;\n  margin-bottom: 3.5px;\n  padding: 15.75px 26.25px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a.about,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a.about {\n  margin-right: 7px;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .left .content a i,\n.Frontend .Home .banner .banner__container .banner__text .row .right .content a i {\n  display: none;\n}\n.Frontend .Home .banner .banner__container .banner__text .row .right .content {\n  display: none;\n}\n.Frontend .Home .blue-bar {\n  height: 300px;\n  display: block;\n  background-color: var(--blue);\n}\n.Frontend .Home section {\n  background-color: var(--white);\n}\n.Frontend .Home section > .container img {\n  border-radius: var(--border-radius);\n}\n.Frontend .Home section > .container .owl-dots .owl-dot {\n  margin: 4px;\n}\n.Frontend .Home section > .container .owl-dots .owl-dot span {\n  background-color: var(--white-50);\n}\n.Frontend .Home section > .container .owl-dots .owl-dot.active span {\n  width: 22px;\n  height: 22px;\n  background-color: var(--blue);\n  border: 4px solid var(--white);\n}\n.Frontend .Home section > .container .view-all {\n  text-align: center;\n}\n.Frontend .Home section.services, .Frontend .Home section.newsletter, .Frontend .Home section.team {\n  background-color: var(--blue-10);\n}\n.Frontend .Home section.blocks {\n  z-index: 2;\n}\n.Frontend .Home section.blocks .container {\n  top: -32px;\n  padding-top: 0;\n  padding-bottom: 0;\n  position: relative;\n}\n.Frontend .Home section.blocks .container .BlocksBlock {\n  margin-bottom: 1rem;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img {\n  padding: 61.25px 28px 28px 28px;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .super {\n  font-size: 15px;\n  margin-bottom: 9px;\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .title {\n  color: var(--blue);\n  margin-bottom: 19.5px;\n  font-size: var(--block-font-size);\n}\n.Frontend .Home section.blocks .container .BlocksBlock .bg-img .description {\n  height: auto;\n  font-size: 15px;\n  margin-bottom: 14px;\n  line-height: 22.5px;\n}\n.Frontend .Home section.services {\n  background-repeat: repeat;\n  background-position: center;\n  background-image: url(\"/images/bg.png\");\n}\n.Frontend .Home section.about img {\n  margin-bottom: 15px;\n}\n.Frontend .Home section.about p {\n  margin-bottom: 20px;\n}\n.Frontend .Home section.about .mission-title {\n  font-weight: 800;\n}\n.Frontend .Home section.about .actions a,\n.Frontend .Home section.about .actions button {\n  margin-top: 10px;\n}\n.Frontend .Home section.newsletter {\n  background-size: cover;\n  background-position: center;\n  background-image: url(\"/images/cta_bg.png\");\n}\n.Frontend .Home section.newsletter p {\n  text-align: center;\n}\n.Frontend .Home section.newsletter form {\n  padding: 40px;\n  color: var(--white);\n  justify-content: center;\n  background-color: var(--blue);\n  border-radius: var(--border-radius);\n}\n.Frontend .Home section.newsletter form .submit {\n  margin-top: 20px;\n  text-align: center;\n}\n.Frontend .Home section.testimonies {\n  background-size: cover;\n  background-position: center;\n  background-color: var(--blue);\n  background-image: url(\"/images/cta_bg.png\");\n}\n.Frontend .Home section.testimonies .SectionTitle .super,\n.Frontend .Home section.testimonies .SectionTitle .top {\n  color: var(--white);\n}\n.Frontend .Home section.testimonies .TestimonyBlock {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .img {\n  margin-bottom: 20px;\n  transition: all 0.25s;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .img div {\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  transition: all 0.25s;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .title {\n  color: var(--green);\n  margin-bottom: 10px;\n  text-align: center;\n  font-size: var(--block-font-size);\n}\n.Frontend .Home section.testimonies .TestimonyBlock .body {\n  font-size: 14px;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .name {\n  font-size: 14px;\n  color: var(--white);\n  margin-bottom: 10px;\n  text-transform: uppercase;\n}\n.Frontend .Home section.testimonies .TestimonyBlock .company {\n  font-size: 20px;\n  font-weight: 800;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n.Frontend .Home section.partners {\n  background-color: var(--soft);\n}\n.Frontend .Home section.partners .container div {\n  text-align: center;\n}\n.Frontend .Home section.partners .container div img {\n  width: auto;\n  height: 60px;\n}\n.Frontend .Home section.quote {\n  background-size: cover;\n  background-position: center;\n  background-color: var(--blue);\n  background-image: url(\"/images/quote_bg_texture.png\");\n}\n.Frontend .Home section.quote .container {\n  display: flex;\n  text-align: center;\n  align-items: center;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.Frontend .Home section.quote .container .SectionTitle {\n  margin-bottom: 20px;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .super {\n  font-size: 1rem;\n  color: var(--white);\n  justify-content: center;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .super::after {\n  content: \"\";\n  flex-grow: 0;\n  width: 2.5rem;\n  display: block;\n  flex-shrink: 0;\n  margin-top: -1px;\n  margin-bottom: 0;\n  margin-left: 10px;\n  border-top: 2px solid var(--green);\n}\n.Frontend .Home section.quote .container .SectionTitle .text .title {\n  font-size: 36px;\n}\n.Frontend .Home section.quote .container .SectionTitle .text .title .left {\n  color: var(--white);\n}\n.Frontend .Home section.quote .container button {\n  white-space: nowrap;\n}\n.Frontend .Home section.publications .PublicationBlock {\n  margin: 0 15px;\n  flex: 0 0 calc(100% - 30px);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child {\n  flex: 0 0 calc(100% - 30px);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text {\n  background-color: transparent;\n  background-image: linear-gradient(to top, var(--black), transparent);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .title {\n  color: var(--white);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .title:hover {\n  color: var(--green);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .body {\n  color: var(--white);\n}\n.Frontend .Home section.publications .PublicationBlock:first-child .text .read-more:hover {\n  color: var(--white);\n}\n.Frontend .Home section.map {\n  display: flex;\n  height: 700px;\n  position: relative;\n  flex-direction: column;\n}\n.Frontend .Home section.map iframe {\n  z-index: 1;\n  width: 100%;\n  flex-grow: 1;\n}\n.Frontend .Home section.map > .info {\n  bottom: 0;\n  width: 100%;\n  z-index: 990;\n  position: static;\n}\n.Frontend .Home section.map > .info .container {\n  display: flex;\n  border-radius: 0;\n  min-height: 205px;\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n  flex-direction: column;\n  justify-content: center;\n  background-color: var(--white);\n}\n.Frontend .Home section.map > .info .container > .row {\n  align-items: flex-end;\n}\n.Frontend .Home section.map > .info .container > .row .head .super {\n  font-size: 15px;\n}\n.Frontend .Home section.map > .info .container > .row .head .title {\n  color: var(--blue);\n  margin-bottom: 20px;\n  font-size: var(--block-font-size);\n  line-height: var(--block-font-size);\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock {\n  margin-top: 1rem;\n  margin-bottom: 0;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .icon {\n  font-size: 40px;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .title {\n  margin-bottom: 11.2px;\n}\n.Frontend .Home section.map > .info .container > .row .ServiceBlock .body {\n  min-height: auto;\n  text-align: left;\n}\n\n@media (min-width: 800px) {\n  .Frontend .Home .banner > div {\n    padding-top: 0;\n  }\n  .Frontend .Home .banner > div .col-md-6 .content {\n    color: var(--white);\n  }\n  .Frontend .Home .banner > div .col-md-6 .content .super {\n    font-size: 25px;\n  }\n  .Frontend .Home .banner > div .col-md-6 .content .title {\n    font-size: 60px;\n    margin-bottom: 25px;\n  }\n  .Frontend .Home .banner > div .col-md-6 .content .vector {\n    margin-top: 25px;\n    margin-bottom: 60px;\n  }\n  .Frontend .Home .banner > div .col-md-6 .bg-white.rounded-lg {\n    top: 0;\n  }\n  .Frontend .Home .blue-bar {\n    display: none;\n  }\n}\n@media (min-width: 1000px) {\n  .Frontend .Home .banner {\n    height: calc(100vh - var(--toolbar-top-height) - var(--toolbar-bottom-height));\n  }\n  .Frontend .Home .banner .banner__container {\n    background-position: 0% 0%;\n    background-size: 200% 100%;\n    background-repeat: no-repeat;\n    background-color: transparent;\n    background-image: linear-gradient(to right, var(--white-80) 10%, transparent, var(--white-80) 80%);\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row {\n    align-items: center;\n    flex-direction: row;\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row .title {\n    margin-bottom: 20px;\n    font-size: var(--banner-font-size-md);\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row .description {\n    margin-bottom: 30px;\n  }\n  .Frontend .Home .banner .banner__container .banner__text .row a {\n    font-size: 1rem;\n    padding: 18px 30px;\n  }\n  .Frontend .Home section.blocks .container .BlocksBlock {\n    margin-bottom: 0;\n  }\n  .Frontend .Home section.blocks .container .BlocksBlock .description {\n    height: 70px !important;\n  }\n  .Frontend .Home section.about p {\n    margin-bottom: 20px;\n  }\n  .Frontend .Home section.about .actions a,\n.Frontend .Home section.about .actions button {\n    margin-top: 10px;\n  }\n  .Frontend .Home section.about .actions .donate,\n.Frontend .Home section.about .actions .join {\n    margin-right: 15px;\n  }\n  .Frontend .Home section.newsletter form .submit {\n    margin-top: 30px;\n  }\n  .Frontend .Home section.quote .container {\n    text-align: left;\n    flex-direction: row;\n  }\n  .Frontend .Home section.quote .container .SectionTitle {\n    margin-bottom: 0;\n  }\n  .Frontend .Home section.quote .container .SectionTitle .text .super {\n    justify-content: flex-start;\n  }\n  .Frontend .Home section.quote .container .SectionTitle .text .super::after {\n    display: none;\n  }\n  .Frontend .Home section.publications .PublicationBlock {\n    flex: 0 0 calc(25% - 30px);\n  }\n  .Frontend .Home section.publications .PublicationBlock:first-child {\n    flex: 0 0 calc(50% - 30px);\n  }\n  .Frontend .Home section.map > .info {\n    bottom: 2rem;\n    position: absolute;\n  }\n  .Frontend .Home section.map > .info .container {\n    padding-top: 0;\n    padding-bottom: 0;\n    border-radius: var(--border-radius);\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock {\n    margin-top: 0;\n    padding-left: 0;\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock .title {\n    margin-bottom: 11px;\n  }\n  .Frontend .Home section.map > .info .container .ServiceBlock .body {\n    height: 60px;\n  }\n}\n@media (min-width: 1280px) {\n  .Frontend .Home .banner {\n    height: calc(100vh - var(--toolbar-top-height) - var(--toolbar-bottom-height));\n  }\n  .Frontend .Home .banner .banner__text .title {\n    margin-bottom: 25px;\n    font-size: var(--banner-font-size);\n  }\n  .Frontend .Home .banner .banner__text .description {\n    margin-bottom: 40px;\n  }\n  .Frontend .Home section.about p {\n    margin-bottom: 30px;\n  }\n  .Frontend .Home section.newsletter form .submit {\n    margin-top: 40px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

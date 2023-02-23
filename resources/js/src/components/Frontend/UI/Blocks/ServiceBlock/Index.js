@@ -25,7 +25,8 @@ class ServiceBlock extends Component {
                 <div className='icon'><i className={`fas fa-${icon} fa-fw`} /></div>
 
                 <div className='text'>
-                    <Link to={link} className='title'>{title[lang]}</Link>
+                    {/* <Link to={link} className='title'>{title[lang]}</Link> */}
+                    <div className='title'>{title[lang]}</div>
                     
                     <div className='body'>{!!formattedBody && formattedBody.length > 200 ? formattedBody.substr(0, 200) + '...' : formattedBody}</div>
                 </div>

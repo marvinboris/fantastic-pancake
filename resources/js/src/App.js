@@ -88,6 +88,7 @@ const asyncAuthAdminVerify = asyncComponent(() => import('./containers/Auth/Admi
 // Frontend routes
 const asyncHome = asyncComponent(() => import('./containers/Frontend/Home'));
 const asyncAbout = asyncComponent(() => import('./containers/Frontend/About'));
+const asyncReferences = asyncComponent(() => import('./containers/Frontend/References'));
 const asyncContact = asyncComponent(() => import('./containers/Frontend/Contact'));
 
 const asyncPublications = asyncComponent(() => import('./containers/Frontend/Publications'));
@@ -124,6 +125,7 @@ class App extends Component {
                     <Route path="/publications" component={asyncPublications} />
 
                     <Route path="/contact" component={asyncContact} />
+                    <Route path="/references" component={asyncReferences} />
                     <Route path="/about" component={asyncAbout} />
                     <Route path="/" component={asyncHome} />
                 </Switch>

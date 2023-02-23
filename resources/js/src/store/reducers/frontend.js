@@ -1,10 +1,9 @@
-import * as actionTypes from '../actions/actionTypes';
 import { updateObject } from '../../shared/utility';
 
 const initialState = {};
 
 const pages = {
-    home: "HOME", about: "ABOUT", contact: "CONTACT", publications: "PUBLICATIONS", services: "SERVICES",
+    home: "HOME", about: "ABOUT", contact: "CONTACT", publications: "PUBLICATIONS", services: "SERVICES", references: "REFERENCES"
 };
 
 Object.keys(pages).forEach(page => {

@@ -5,17 +5,19 @@ import { withRouter, Link } from 'react-router-dom';
 import Carousel from './Carousel';
 import Quote from './Quote';
 
+import View from '../../../components/Backend/UI/List/Photo/View';
+
 import SectionTitle from '../../../components/Frontend/UI/Title/SectionTitle';
 import ServiceBlock from '../../../components/Frontend/UI/Blocks/ServiceBlock';
 import PublicationBlock from '../../../components/Frontend/UI/Blocks/PublicationBlock';
 import TeamMemberBlock from '../../../components/Frontend/UI/Blocks/TeamMemberBlock';
+import TestimonyBlock from '../../../components/Frontend/UI/Blocks/TestimonyBlock';
 
 import OwlCarousel from '../../../components/UI/OwlCarousel';
 
 import { getHome, postNewsletter, postSubscribe, resetHome } from '../../../store/actions/frontend/home';
 
 import './Home.scss';
-import View from '../../../components/Backend/UI/List/Photo/View';
 
 const BlocksBlock = ({ cms }) => <div className='BlocksBlock'>
     <div className='bg-img shadow' style={{ backgroundImage: `linear-gradient(30deg, rgba(255,255,255,.8) 50%, transparent), url("${cms.photo}")` }}>
@@ -29,20 +31,6 @@ const BlocksBlock = ({ cms }) => <div className='BlocksBlock'>
             <Link to={cms.link} className="btn btn-green">{cms.button}</Link>
         </div>
     </div>
-</div>;
-
-const TestimonyBlock = ({ title, body, name, company, photo }) => <div className='TestimonyBlock'>
-    <div className='img'>
-        <div className='bg-img' style={{ backgroundImage: `url("${photo}")` }} />
-    </div>
-
-    <div className='title'>{title}</div>
-
-    <div className='body'>{body}</div>
-
-    <div className='name'>{name}</div>
-
-    <div className='company'>{company}</div>
 </div>;
 
 const initialState = {
@@ -91,7 +79,7 @@ class Home extends Component {
         const {
             content: {
                 cms: {
-                    pages: { frontend: { pages: { home: cms } } }
+                    pages: { frontend: { header: { menu }, pages: { home: cms } } }
                 }, services
             },
             frontend: { home: { testimonies = [], publications = [], partners = [], team = [] } }
@@ -106,7 +94,65 @@ class Home extends Component {
         const teamContent = team.map(member => <TeamMemberBlock key={JSON.stringify(member)} {...{ ...member, job: member.job[lang] }} />);
 
         return <div className="Home">
-            <div className='banner'>
+            <div className="banner">
+                <img src={cms.banner.carousel[0].src} alt="Home Banner" />
+
+                <div className='d-flex align-items-center'>
+                    <div className="container">
+                        <div className="row">
+                            <div className='col-md-6'>
+                                <div className='content'>
+                                    <div className='super'>{cms.banner.carousel[0].head}</div>
+
+                                    <div className='title'>
+                                        <div className='top'>{cms.banner.carousel[0].title.top}</div>
+                                        <div className='bottom'>{cms.banner.carousel[0].title.bottom}</div>
+                                    </div>
+
+                                    <div className='description'>{cms.banner.carousel[0].description}</div>
+
+                                    <div className="vector" />
+
+                                    <div className='buttons'>
+                                        <Link to={'/about'} className="about btn btn-green">{cms.banner.about}<i className='fas fa-address-card' /></Link>
+                                        <Link to={'/services'} className="btn btn-blue">{cms.banner.services}<i className='fas fa-concierge-bell' /></Link>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-6">
+                                <div className="bg-white rounded-lg p-4">
+                                    <div className="d-flex justify-content-end">
+                                        <div className="rounded-pill bg-black-70 embed-responsive embed-responsive-1by1" style={{ width: 28 }} />
+                                    </div>
+
+                                    <div className="position-relative mb-3">
+                                        <div className="h3 text-dark mb-3">
+                                            Travaillez avec nous en
+                                            mode freelance
+                                        </div>
+
+                                        <div className="bg-green rounded-pill" style={{ width: 53, height: 8 }} />
+                                    </div>
+
+                                    <div className='mb-4'>
+                                        Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d’une part des  professionels en capacites d’autres part, des organisations en besoin d’accompagnement l’amelioration de leurs performances.
+                                    </div>
+
+                                    <div>
+                                        <a href={menu.freelance_link} target="_blank" className="btn btn-green btn-block mb-3">Je veux travailler<i className='far fa-briefcase' /></a>
+                                        <View content={<Quote />}>
+                                            <button className="btn btn-blue btn-block">J'ai besoin d'un professionnel</button>
+                                        </View>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className='banner'>
                 <div className="banner__container">
                     <div className="banner__text container">
                         <div className='row'>
@@ -150,7 +196,9 @@ class Home extends Component {
                 </div>
 
                 <Carousel items={cms.banner.carousel} />
-            </div>
+            </div> */}
+
+            <div className='blue-bar' />
 
             <section className='blocks'>
                 <div className='container'>

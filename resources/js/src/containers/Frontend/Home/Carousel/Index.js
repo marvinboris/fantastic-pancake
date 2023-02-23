@@ -45,7 +45,7 @@ export default ({ children, items }) => {
         <div className="h-100 bg-img" style={{ backgroundImage: `url("${item.src}")` }} />
     </CarouselItem>);
 
-    return <Carousel id="banner-carousel" activeIndex={activeIndex} next={next} previous={previous} ride='carousel' className="h-100 carousel-fade Carousel">
+    return <Carousel id="banner-carousel" activeIndex={activeIndex} next={next} previous={previous} ride='carousel' pause='hover' interval={10000} className="h-100 carousel-fade Carousel">
         {slides}
 
         {children}
