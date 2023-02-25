@@ -128,21 +128,20 @@ class Home extends Component {
 
                                     <div className="position-relative mb-3">
                                         <div className="h3 text-dark mb-3">
-                                            Travaillez avec nous en
-                                            mode freelance
+                                            {cms.banner.freelance.title}
                                         </div>
 
                                         <div className="bg-green rounded-pill" style={{ width: 53, height: 8 }} />
                                     </div>
 
                                     <div className='mb-4'>
-                                        Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d’une part des  professionels en capacites d’autres part, des organisations en besoin d’accompagnement l’amelioration de leurs performances.
+                                        {cms.banner.freelance.description}
                                     </div>
 
                                     <div>
-                                        <a href={menu.freelance_link} target="_blank" className="btn btn-green btn-block mb-3">Je veux travailler<i className='far fa-briefcase' /></a>
+                                        <a href={menu.freelance_link} target="_blank" className="btn btn-green btn-block mb-3">{cms.banner.freelance.i_want_to_work}<i className='far fa-briefcase' /></a>
                                         <View content={<Quote />}>
-                                            <button className="btn btn-blue btn-block">J'ai besoin d'un professionnel</button>
+                                            <button className="btn btn-blue btn-block">{cms.banner.freelance.i_need_a_professional}</button>
                                         </View>
                                     </div>
                                 </div>

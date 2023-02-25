@@ -638,9 +638,10 @@
                     },
                     "menu": {
                         "home": "Accueil",
-                        "about": "Le Cabinet",
+                        "about": "Qui sommes-nous?",
                         "services": "Services",
                         "publications": "Actualités",
+                        "references": "Nos références",
                         "contact": "Contact",
                         "tel": "620 133 885",
                         "freelance_link": "Link to freelance",
@@ -656,9 +657,10 @@
                             },
                             "menu": {
                                 "home": "Accueil",
-                                "about": "Le Cabinet",
+                                "about": "Qui sommes-nous?",
                                 "services": "Services",
                                 "publications": "Blog",
+                                "references": "Nos références",
                                 "contact": "Contact"
                             }
                         },
@@ -676,6 +678,7 @@
                             "listen": "Nous sommes à l'écoute:",
                             "address": "Douala, Bonapriso, derrière Lycée Mongo Joseph",
                             "phone": "+237 620 133 885",
+                            "email": "contact@maholconsulting.com",
                             "hours": "8h - 17h, Lundi à Samedi"
                         }
                     },
@@ -708,10 +711,10 @@
                                     "src": "\/images\/smiling-confident.jpg",
                                     "head": "Que vous manque-t-il?",
                                     "title": {
-                                        "top": "Trouver la",
-                                        "bottom": "pièce manquante"
+                                        "top": "L'accompagnement",
+                                        "bottom": "qui vous manque"
                                     },
-                                    "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala, Bonapriso au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises."
+                                    "description": "MAHOL CONSULTING est un cabinet de conseil en management d'organisations basé à Douala Bonapriso, spécialisé dans la structuration, l'amélioration des processus et la réduction des coûts."
                                 },
                                 {
                                     "src": "\/images\/african-american-afro-american-analyzing-black-people-brainstorming-1434697-pxhere.com.jpg",
@@ -731,7 +734,13 @@
                                     },
                                     "description": "Notre vision est de rendre le conseil accessible à tous et sans délai."
                                 }
-                            ]
+                            ],
+                            "freelance": {
+                                "title": "Travaillez avec nous en mode freelance",
+                                "description": "Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d’une part des  professionels en capacites d’autres part, des organisations en besoin d’accompagnement l’amelioration de leurs performances.",
+                                "i_want_to_work": "Je veux travailler",
+                                "i_want_a_professional": "J'ai besoin d'un professionnel"
+                            }
                         },
                         "blocks": {
                             "items": [
@@ -754,7 +763,7 @@
                                 {
                                     "photo": "/images/image-right-creative3.jpg",
                                     "super": "Vous êtes roi",
-                                    "title": "Relation client",
+                                    "title": "Proximité client",
                                     "description": "Nous sommes toujours à l'écoute de nos clients pour leur plus grande satisfaction.",
                                     "link": "/contact",
                                     "button": "Contactez-nous"
@@ -769,14 +778,14 @@
                             },
                             "subtitle": "Qui sommes-nous?",
                             "photo": "\/images\/image-right9.png",
-                            "description": "MAHOL CONSULTING est un cabinet de conseil situé à Douala, Bonapriso au Cameroun, spécialisé en management des organisations et ingénierie financière des entreprises.",
+                            "description": "MAHOL CONSULTING est un cabinet de conseil en management d'organisations basé à Douala Bonapriso, spécialisé dans la structuration, l'amélioration des processus et la réduction des coûts.",
                             "mission_title": "Notre mission",
                             "mission_description": "Faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
                             "read_more": "En savoir plus"
                         },
                         "services": {
                             "icon": "concierge-bell",
-                            "head": "Comment vous aider",
+                            "head": "Comment vous accompagner",
                             "title": {
                                 "top": "Gammes de",
                                 "bottom": "Services"
@@ -822,7 +831,7 @@
                             "head": "Les meilleurs des meilleurs",
                             "title": {
                                 "left": "Rencontrez",
-                                "right": "notre équipe"
+                                "right": "notre comité de direction"
                             }
                         },
                         "map": {
@@ -861,10 +870,20 @@
                             "vision": "Notre <strong>vision</strong> est de rendre le conseil accessible à tous et sans délai",
                             "values": "Nous mettons un point d'honneur à être, en toutes circonstances objectifs et honnêtes dans les résultats que nous délivrons. Nous sommes un cabinet guidé par des valeurs fortes:<ul><li><strong>Culte de l'excellence:</strong> Une équipe d'experts professionnels et dynamiques, orientés résultats</li><li><strong>Transparence:</strong> Clarté, sécurité</li><li><strong>Proximité client:</strong> Ecoute</li></ul>",
                             "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
-                            "read_more": "En savoir plus"
+                            "expertise": "Nos <strong>domaines de compétences</strong> :<br />• Gouvernance d’entreprise<br />• Management des organisations et des projets<br />• Management des systèmes d’information et automatisation des procédés<br />• Management du capital humain<br />• Comptabilité finances et fiscalité<br />• Développement commercial<br />• Marketing et Communication<br />• Management de la chaine logistique<br />• Droit des affaires<br />• Douane et Transit",
+                            "services": "Nos <strong>services</strong> :<br />▪ Conception et mise en œuvre des projets événementiels (CMOPE)<br />▪ Conception et réalisation des applications de gestion<br />▪ Recrutement<br />▪ Animation des plates formes digitales et sites internet<br />▪ Formation finance pour non-financiers<br />▪ Conception et réalisation des supports de communication institutionnelle<br />▪ Création et mise en œuvre d’une entreprise",
+                            "supports": {
+                                "title": "Nos <strong>supports de communication</strong> :",
+                                "elements": [
+                                    "▪ <strong>Supports de communication institutionnelle</strong><br />1. La fiche de présentation officielle<br />2. Le power point de présentation<br />3. La plaquette de présentation institutionnelle<br />4. Le roll-up institutionnel<br /><br />",
+                                    "▪ <strong>Supports De Communication Produits</strong><br /><details><summary><strong>1. La fiche produit</strong></summary>CMOPE<br />Conception et réalisation des applications de gestion<br />Recrutement<br />Animation des plates formes digitales et sites internet<br />Formation finance pour non-financiers<br />Création de communication institutionnelle<br />Création et mise en œuvre d’une entreprise</details><details><summary><strong>2. Les affiches</strong> :</summary>CMOPE<br />Conception et réalisation des applications de gestion<br />Recrutement<br />Animation des plates formes digitales et sites internet<br />Formation finance pour non-financiers<br />Création de communication institutionnelle<br />Création et mise en œuvre d’une entreprise</details><details><summary><strong>3. Offres de service</strong> :</summary>CMOPE<br />Conception et réalisation des applications de gestion<br />Recrutement<br />Animation des plates formes digitales et sites internet<br />Formation finance pour non-financiers<br />Création de communication institutionnelle<br />Création et mise en œuvre d’une entreprise</details><br /><br />",
+                                    "▪ <strong>Support De Communication Mixte</strong><br />1. Le site internet<br />2. Facebook<br />3. Twitter<br />4. LinkedIn<br /><br />"
+                                ]
+                            },
+                            "details": "<strong>Notre Identité</strong><br /><strong>Une offre de services de haute qualité</strong> : Nous nous focalisons sur la satisfaction de nos clients. Nous mettons tout en œuvre pour répondre aux attentes de nos clients, voire les dépasser.<br /><strong>Un modèle 100% sur mesure</strong> : Nous travaillons sur un modèle 100% sur mesure. Pour cela, nous nous adaptons aux besoins de nos clients. Nous travaillons sur les forces existantes et exploitons ce qui en fait le succès. De plus, nous utilisons les meilleures pratiques du secteur tout en tenant compte de leur environnement, le but étant d’optimiser leur fonctionnement. Notre objectif est la création d’un modèle, d’un plan et d’outils personnalisés.<br /><strong>Une collaboration étroite</strong> : En immersion au sein des organisations de nos clients, nous travaillons en étroite collaboration avec les différentes parties prenantes à leurs activités, afin de créer des synergies positives qui conduiront à des résultats concrets et, par conséquent, à la réussite. L’objectif ultime est de parvenir au succès grâce à l’apport de solutions exploitables dans leurs environnements et au sein de leurs organisations.<br /><strong>Des solutions efficaces et à moindre coût</strong> : Le vecteur directeur des activités de notre cabinet, est de s’approprier les difficultés des entreprises, puis élaborer et implémenter des solutions à moindre coût qui leurs permettraient d’atteindre leurs objectifs de la meilleure des façons.<br /><strong>Des partenariats à long terme avec nos clients</strong> : Nous nous basons sur une logique de partenariat à long terme avec nos clients. Un accent tout particulier est mis sur la transparence de nos activités, tout en mettant en place des processus efficaces et performants dans le but de créer de la valeur pour nos clients.<br /><br /><strong>Nos Valeurs</strong><br />Nous mettons un point d'honneur à être, en toutes circonstances, objectifs et honnêtes dans les résultats que nous délivrons. Nous sommes un cabinet guidé par des valeurs fortes :<br />• <strong>Culte de l’excellence</strong> : Une équipe d’experts professionnels et dynamiques, orientés résultats<br />• <strong>Transparence</strong> : clarté, sécurité<br />• <strong>Proximité client</strong> : Ecoute<br />En tout temps :<br />• Nous plaçons l’intérêt du client au cœur de nos priorités.<br />• L'honnêteté professionnelle est respectée,<br />• Nous sommes transparents sur nos activités,<br />• Nous communiquons avec nos clients pendant toute la durée du mandat et nous les renseignons sur toutes les informations pertinentes.<br />• Nous gardons une attitude professionnelle et respectueuse de nos clients, tout en préservant notre intégrité.<br /><br /><strong>Notre Marque</strong><br />• <strong>Notre logo</strong> : Il est constitué d’un histogramme de croissance de trois barres en guise de la M, initiale de MAHOL, endossé par un croissant représentant la lettre C, initiale de Consulting.<br />• <strong>Nos couleurs</strong> :<br />Vert : Il représente l’optimisme, l’énergie, la réussite.<br />Blanc : Il représente la pureté, la sérénité<br />Bleu : Il représente le rêve, la sagesse, loyauté<br />• <strong>Notre nom</strong> : « MAHOL » est un mot d’origine « BASSA » qui signifie optimisation, croissance, développement, soit, donner les meilleures conditions de fonctionnement.<br />• <strong>Notre slogan</strong> : Votre croissance au bout des doigts<br /><br /><strong>Notre Démarche</strong><br /><strong>1. Entretien de prise de contact</strong><br />Le client présente à de façon sommaire la problématique à solutionner, ainsi que les différentes contraintes.<br /><strong>2. Production de l’esquisse de la mission</strong><br />Le cabinet MAHOL CONSULTING (1) formalise sa compréhension de la problématique à solutionner, des attentes et des exigences du client. (2) Avance de façon sommaire des axes de solutions en réponse aux attentes du client.<br /><strong>3. Confirmation de l’achat du service</strong><br />Le Client MAHOL formalise son intérêt pour l’offre de service reçue. Ce qui donne autorité au chef de mission pour mobiliser les ressources de MAHOL CONSULTING aux activités de cette mission.<br /><strong>4. Signature d’un protocole d’accord</strong><br />Le cabinet MAHOL CONSULTING et le client définissent et formalisent les conditions ainsi que les modalités suivant lesquelles le Cabinet devra réaliser les prestations attendues dans le cadre de la mission qui le lie au Client.<br /><strong>5. Diagnostic</strong><br />En immersion au sein de l’organisation, le cabinet MAHOL CONSULTING confirme la problématique et se fait sa propre analyse pour avoir une vision plus précise de la problématique à solutionner.<br /><strong>6. Validation du cahier de charges</strong><br />Le cabinet MAHOL CONSULTING et le client précisent le contenu du projet en terme d’activité et de livrable, les objectifs, le plan d’actions, ainsi que les indicateurs de mesure de la performance de la mission.<br /><strong>7. Implémentation</strong><br />Le cabinet MAHOL CONSULTING met en œuvre le plan d’actions conformément aux dispositions du cahier de charges.<br /><strong>8. Suivi et évaluation</strong><br />L’état d’avancement du travail de la mission est surveillé suivant les indicateurs de mesure de performance. Par la suite des rapports périodiques sont adressés.<br /><strong>9. Rapport de clôture de la mission</strong><br />A la fin de la mission un rapport général sur la mission est adressé au client."
                         },
                         "services": {
-                            "head": "Comment vous aider",
+                            "head": "Comment vous accompagner",
                             "title": {
                                 "top": "Gammes de",
                                 "bottom": "Services"
@@ -875,7 +894,7 @@
                             "head": "Les meilleurs des meilleurs",
                             "title": {
                                 "left": "Rencontrez",
-                                "right": "notre équipe"
+                                "right": "notre comité de direction"
                             }
                         },
                         "contact": {
@@ -954,13 +973,24 @@
                             ]
                         }
                     },
+                    "references": {
+                        "title": "Nos références",
+                        "subtitle": "Ils nous font confiance",
+                        "testimonies": {
+                            "head": "Des opinions sur nos services",
+                            "title": {
+                                "top": "Ils nous font",
+                                "bottom": "confiance"
+                            }
+                        }
+                    },
                     "services": {
                         "title": "Services",
                         "subtitle": "Nos services",
                         "written_by": "Ecrit par",
                         "loading": "Chargement en cours...",
                         "services": {
-                            "head": "Comment pouvons-nous vous aider",
+                            "head": "Comment pouvons-nous vous accompagner",
                             "title": {
                                 "left": "Toutes nos",
                                 "right": "gammes de services"
@@ -1611,6 +1641,7 @@
                         "about": "About us",
                         "services": "Services",
                         "publications": "News",
+                        "references": "Our references",
                         "contact": "Contact",
                         "tel": "620 133 885",
                         "freelance_link": "Link to freelance",
@@ -1629,6 +1660,7 @@
                                 "about": "About us",
                                 "services": "Services",
                                 "publications": "News",
+                                "references": "Our references",
                                 "contact": "Contact"
                             }
                         },
@@ -1646,6 +1678,7 @@
                             "listen": "We are listening:",
                             "address": "Douala, Bonapriso, behind Lycée Mongo Joseph",
                             "phone": "+237 620 133 885",
+                            "email": "contact@maholconsulting.com",
                             "hours": "8h - 17h, Monday to Saturday"
                         }
                     },
@@ -1701,7 +1734,13 @@
                                     },
                                     "description": "Our vision is to make advice accessible to everyone and without delay."
                                 }
-                            ]
+                            ],
+                            "freelancer": {
+                                "title": "Work with us in freelance mode",
+                                "description": "Facilitate, organize and secure at a lower cost and without delay. The meeting on the one hand of professionals in capacity on the other hand, organizations in need of support to improve their performance.",
+                                "i_want_to_work": "I want to work",
+                                "i_want_a_professional": "I need a professional"
+                            }
                         },
                         "blocks": {
                             "items": [
@@ -1922,6 +1961,17 @@
                                     "description": "contact@maholconsulting.com"
                                 }
                             ]
+                        }
+                    },
+                    "references": {
+                        "title": "Our references",
+                        "subtitle": "Trusted by Big Names",
+                        "testimonies": {
+                            "head": "Great reviews of our services",
+                            "title": {
+                                "top": "Trusted by",
+                                "bottom": "Big Names"
+                            }
                         }
                     },
                     "services": {
