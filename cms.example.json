@@ -739,7 +739,7 @@
                                 "title": "Travaillez avec nous en mode freelance",
                                 "description": "Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d’une part des  professionels en capacites d’autres part, des organisations en besoin d’accompagnement l’amelioration de leurs performances.",
                                 "i_want_to_work": "Je veux travailler",
-                                "i_want_a_professional": "J'ai besoin d'un professionnel"
+                                "i_need_a_professional": "J'ai besoin d'un professionnel"
                             }
                         },
                         "blocks": {
@@ -1739,7 +1739,7 @@
                                 "title": "Work with us in freelance mode",
                                 "description": "Facilitate, organize and secure at a lower cost and without delay. The meeting on the one hand of professionals in capacity on the other hand, organizations in need of support to improve their performance.",
                                 "i_want_to_work": "I want to work",
-                                "i_want_a_professional": "I need a professional"
+                                "i_need_a_professional": "I need a professional"
                             }
                         },
                         "blocks": {
