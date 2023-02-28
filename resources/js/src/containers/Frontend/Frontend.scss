@@ -17,12 +17,12 @@
                 }
 
                 p {
-                    margin-bottom: 20px;
+                    margin-bottom: 24px;
                 }
 
                 .view-all {
-                    font-size: 14px;
-                    margin-top: 20px;
+                    font-size: 18px;
+                    margin-top: 24px;
                     text-align: center;
                     padding: 15.75px 26.25px;
                 }
@@ -80,18 +80,18 @@
 
     footer {
         &>.top {
-            font-size: 14px;
+            font-size: 18px;
             padding: 2rem 0;
             color: var(--white);
             background-color: var(--blue);
 
             .SectionTitle {
                 .super {
-                    font-size: 14px;
+                    font-size: 18px;
                 }
 
                 .title {
-                    font-size: 20px;
+                    font-size: 24px;
                     margin-bottom: 4px;
 
                     .top {
@@ -125,7 +125,7 @@
         }
 
         &>.bottom {
-            padding: 20px 0;
+            padding: 24px 0;
             color: var(--blue);
             background-color: var(--white);
 

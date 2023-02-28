@@ -100,27 +100,51 @@ class Home extends Component {
                 <div className='d-flex align-items-center'>
                     <div className="container">
                         <div className="row">
-                            <div className='col-md-6'>
+                            <div className='col-md-12'>
                                 <div className='content'>
-                                    <div className='super'>{cms.banner.carousel[0].head}</div>
+                                    {/* <div className='super'>{cms.banner.carousel[0].head}</div> */}
 
                                     <div className='title'>
                                         <div className='top'>{cms.banner.carousel[0].title.top}</div>
                                         <div className='bottom'>{cms.banner.carousel[0].title.bottom}</div>
                                     </div>
 
-                                    <div className='description'>{cms.banner.carousel[0].description}</div>
+                                    {/* <div className='description'>{cms.banner.carousel[0].description}</div>
 
                                     <div className="vector" />
 
                                     <div className='buttons'>
                                         <Link to={'/about'} className="about btn btn-green">{cms.banner.about}<i className='fas fa-address-card' /></Link>
                                         <Link to={'/services'} className="btn btn-blue">{cms.banner.services}<i className='fas fa-concierge-bell' /></Link>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
 
                             <div className="col-md-6">
+                                <section className='quote'>
+                                    <div className='container'>
+                                        <SectionTitle title={cms.quote.title} />
+
+                                        <div>
+                                            <View title={cms.quote.form.title} content={<Quote />}><button className='btn btn-green text-truncate'>{cms.quote.get}</button></View>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div className="col-md-6">
+                                <section className='freelance'>
+                                    <div className='container'>
+                                        <SectionTitle title={cms.freelance.title} />
+
+                                        <div>
+                                            <a href={menu.freelance_link} target="_blank" className="btn btn-green text-truncate">{cms.banner.freelance.i_want_to_work}</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            {/* <div className="col-md-6">
                                 <div className="bg-white rounded-lg p-4">
                                     <div className="d-flex justify-content-end">
                                         <div className="rounded-pill bg-black-70 embed-responsive embed-responsive-1by1" style={{ width: 28 }} />
@@ -145,7 +169,7 @@ class Home extends Component {
                                         </View>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -199,7 +223,7 @@ class Home extends Component {
 
             <div className='blue-bar' />
 
-            <section className='blocks'>
+            {/* <section className='blocks'>
                 <div className='container'>
                     <div className='row'>
                         {blocksContent}
@@ -249,11 +273,11 @@ class Home extends Component {
                 </div>
             </section>
 
-            {/* <section className='partners'>
+            <section className='partners'>
                 <div className='container'>
                     {partners.length > 0 && <OwlCarousel ref="partners-carousel" options={{ responsive: { 0: { items: 2 }, 600: { items: 3 }, 900: { items: 4 }, 1200: { items: 5 } }, dots: false, margin: 20 }}>{partnersContent}</OwlCarousel>}
                 </div>
-            </section> */}
+            </section>
 
             <section className='team'>
                 <div className='container'>
@@ -314,7 +338,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>;
     }
 }

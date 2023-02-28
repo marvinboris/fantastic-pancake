@@ -91,11 +91,13 @@ class About extends Component {
 
                             <div className='row'>
                                 <div className='col-md-6'>
-                                    <p dangerouslySetInnerHTML={{ __html: cms.about.values }} />
+                                    <p dangerouslySetInnerHTML={{ __html: cms.about.description }} />
+
+                                    <p dangerouslySetInnerHTML={{ __html: cms.about.mission }} />
                                 </div>
 
                                 <div className='col-md-6'>
-                                    <p dangerouslySetInnerHTML={{ __html: cms.about.mission }} />
+                                    <p dangerouslySetInnerHTML={{ __html: cms.about.values }} />
 
                                     <p dangerouslySetInnerHTML={{ __html: cms.about.vision }} />
                                 </div>
@@ -108,10 +110,6 @@ class About extends Component {
 
                         <div className="col-md-4">
                             <p dangerouslySetInnerHTML={{ __html: cms.about.services }} />
-                        </div>
-
-                        <div className="col-md-4">
-                            <p dangerouslySetInnerHTML={{ __html: cms.about.expertise }} />
                         </div>
 
                         <div className="col-12">

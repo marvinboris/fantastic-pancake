@@ -4,9 +4,9 @@ import './SectionTitle.scss';
 
 export default ({ head, title, subtitle, centered }) => <div className={`SectionTitle${centered ? " centered" : ""}`}>
     <div className='text'>
-        <div className='super'>{head}</div>
+        {head ? <div className='super'>{head}</div> : null}
 
-        <div className='title'>
+        {title ? <div className='title'>
             {(title.top || title.bottom) && <div className='vertical'>
                 <div className='top'>{title.top}</div>
                 <div className='bottom'>{title.bottom}</div>
@@ -16,11 +16,11 @@ export default ({ head, title, subtitle, centered }) => <div className={`Section
                 <span className='left'>{title.left}</span>
                 <span className='right'>{title.right}</span>
             </div>}
-        </div>
+        </div> : null}
 
-        {subtitle && <div className='subtitle row'>
+        {subtitle ? <div className='subtitle row'>
             <div className='col-md-6'>{subtitle.left || subtitle}</div>
             <div className='col-md-6'>{subtitle.right}</div>
-        </div>}
+        </div> : null}
     </div>
 </div>;
