@@ -738,7 +738,7 @@
                             "freelance": {
                                 "title": "Travaillez avec nous en mode freelance",
                                 "description": "Faciliter, organiser et securiser a moindre cout et sans delai. La rencontre d’une part des  professionels en capacites d’autres part, des organisations en besoin d’accompagnement l’amelioration de leurs performances.",
-                                "i_want_to_work": "Je veux travailler",
+                                "i_want_to_work": "Inscrivez-vous",
                                 "i_need_a_professional": "J'ai besoin d'un professionnel"
                             }
                         },
@@ -876,7 +876,7 @@
                             "description": "<strong>MAHOL CONSULTING</strong> est un cabinet de conseil en management des organisations, basé à Douala Bonapriso et qui est spécialisé dans la structuration, l'amélioration des processus et la réduction des coûts.",
                             "vision": "Notre <strong>vision</strong> est de rendre le conseil accessible à tous et sans délai",
                             "values": "Nous mettons un point d'honneur à être, en toutes circonstances objectifs et honnêtes dans les résultats que nous délivrons. Nous sommes un cabinet guidé par des valeurs fortes:<ul><li><strong>Culte de l'excellence:</strong> Une équipe d'experts professionnels et dynamiques, orientés résultats</li><li><strong>Transparence:</strong> Clarté, sécurité</li><li><strong>Proximité client:</strong> Ecoute</li></ul>",
-                            "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre d'une part des professionnels en capacités et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
+                            "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre des professionnels en capacités d'une part et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
                             "expertise": "Nos <strong>domaines de compétences</strong> :<br />• Gouvernance d’entreprise<br />• Management des organisations et des projets<br />• Management des systèmes d’information et automatisation des procédés<br />• Management du capital humain<br />• Comptabilité finances et fiscalité<br />• Développement commercial<br />• Marketing et Communication<br />• Management de la chaine logistique<br />• Droit des affaires<br />• Douane et Transit",
                             "services": "Nos <strong>services</strong> :<br />▪ Conception et mise en œuvre des projets événementiels (CMOPE)<br />▪ Conception et réalisation des applications de gestion<br />▪ Recrutement<br />▪ Animation des plates formes digitales et sites internet<br />▪ Formation finance pour non-financiers<br />▪ Conception et réalisation des supports de communication institutionnelle<br />▪ Création et mise en œuvre d’une entreprise",
                             "supports": {
@@ -1745,7 +1745,7 @@
                             "freelance": {
                                 "title": "Work with us in freelance mode",
                                 "description": "Facilitate, organize and secure at a lower cost and without delay. The meeting on the one hand of professionals in capacity on the other hand, organizations in need of support to improve their performance.",
-                                "i_want_to_work": "I want to work",
+                                "i_want_to_work": "Sign up",
                                 "i_need_a_professional": "I need a professional"
                             }
                         },
@@ -1883,7 +1883,7 @@
                             "description": "MAHOL CONSULTING is a consulting firm located in Douala, Cameroon, specializing in organizational management and corporate financial engineering.",
                             "vision": "Our <strong>vision</strong> is to make advice accessible to everyone and without delay",
                             "values": "We make it a point of honor to be, in all circumstances, objective and honest in the results we deliver. We are a firm guided by strong values:<ul><li><strong>Cult of excellence:</strong> A team of professional and dynamic experts, results-oriented</li><li><strong> Transparency:</strong> Clarity, security</li><li><strong>Client proximity:</strong> Listening</li></ul>",
-                            "mission": "Our <strong>mission</strong> is to facilitate, organize and secure at the lowest cost and without delay, the meeting between on the one hand professionals in capacity and on the other hand organizations in need of support for improvement. of their performance.",
+                            "mission": "Our <strong>mission</strong> is to facilitate, organize and secure at the lowest cost and without delay, the meeting between professionals in capacity on the one hand and on the other hand organizations in need of support for improvement. of their performance.",
                             "expertise": "Our <strong>areas of expertise</strong>:<br />• Corporate governance<br />• Management of organizations and projects<br />• Management of information systems and automation processes<br />• Human capital management<br />• Accounting, finance and taxation<br />• Business development<br />• Marketing and Communication<br />• Supply chain management<br />• Business Law<br />• Customs and Transit",
                             "services": "Our <strong>services</strong>:<br />▪ Design and implementation of event projects (CMOPE)<br />▪ Design and implementation of management applications<br />▪ Recruitment< br />▪ Animation of digital platforms and websites<br />▪ Finance training for non-financiers<br />▪ Design and production of institutional communication media<br />▪ Creation and implementation of a company ",
                             "supports": {
