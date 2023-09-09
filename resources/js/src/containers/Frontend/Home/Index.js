@@ -126,7 +126,7 @@ class Home extends Component {
                                         <SectionTitle title={cms.quote.title} />
 
                                         <div>
-                                            <View title={cms.quote.form.title} content={<Quote />}><button className='btn btn-green text-truncate'>{cms.quote.get}</button></View>
+                                            <View title={cms.quote.form.title} content={<Quote />}><button className='btn btn-white text-truncate'>{cms.quote.get}</button></View>
                                         </div>
                                     </div>
                                 </section>

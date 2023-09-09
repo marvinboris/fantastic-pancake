@@ -13,16 +13,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
-
 function TestimonyBlock(_ref) {
   var title = _ref.title,
       body = _ref.body,
       name = _ref.name,
       company = _ref.company,
       photo = _ref.photo;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
     className: "TestimonyBlock",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "img",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "bg-img",
@@ -30,19 +29,7 @@ function TestimonyBlock(_ref) {
           backgroundImage: "url(\"".concat(photo, "\")")
         }
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "title",
-      children: title
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "body",
-      children: body
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "name",
-      children: name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-      className: "company",
-      children: company
-    })]
+    })
   });
 }
 
@@ -137,13 +124,16 @@ var References = /*#__PURE__*/function (_Component) {
           cms = _this$props.content.cms.pages.frontend.pages.references,
           _this$props$frontend$ = _this$props.frontend.references.testimonies,
           testimonies = _this$props$frontend$ === void 0 ? [] : _this$props$frontend$;
-      var lang = localStorage.getItem('lang');
+      var lang = localStorage.getItem("lang");
       var testimoniesContent = testimonies.map(function (testimony) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Blocks_TestimonyBlock__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, _objectSpread(_objectSpread({}, testimony), {}, {
-          company: testimony.company[lang],
-          title: testimony.title[lang],
-          body: testimony.body[lang]
-        })), JSON.stringify(testimony));
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "col-md-3",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Blocks_TestimonyBlock__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, _objectSpread(_objectSpread({}, testimony), {}, {
+            company: testimony.company[lang],
+            title: testimony.title[lang],
+            body: testimony.body[lang]
+          })))
+        }, JSON.stringify(testimony));
       });
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "References",
@@ -151,27 +141,12 @@ var References = /*#__PURE__*/function (_Component) {
           className: "testimonies",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_3__["default"], _objectSpread({}, cms.testimonies)), testimonies.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)((react_owl_carousel2__WEBPACK_IMPORTED_MODULE_2___default()), {
-              ref: "testimonies-carousel",
-              options: {
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  600: {
-                    items: 2
-                  },
-                  900: {
-                    items: 3
-                  },
-                  1200: {
-                    items: 4
-                  }
-                },
-                dots: false,
-                margin: 20
-              },
-              children: testimoniesContent
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_3__["default"], _objectSpread({}, cms.testimonies)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              className: "col-12",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+                className: "row",
+                children: testimoniesContent
+              })
             })]
           })
         })
@@ -318,7 +293,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Frontend .References section {\n  background-color: var(--white);\n}\n.Frontend .References section.about img {\n  margin-bottom: 20px;\n}\n.Frontend .References section.about p ul {\n  margin: 0;\n  text-align: left;\n}\n.Frontend .References section.team {\n  background-repeat: repeat;\n  background-position: center;\n  background-color: var(--soft);\n  background-image: url(\"/images/cta_bg.png\");\n}\n\n@media (min-width: 1000px) {\n  .Frontend .References section.about img {\n    margin-bottom: 0;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Frontend .References section {\n  background-color: var(--white);\n}\n.Frontend .References section.about img {\n  margin-bottom: 20px;\n}\n.Frontend .References section.about p ul {\n  margin: 0;\n  text-align: left;\n}\n.Frontend .References section.team {\n  background-repeat: repeat;\n  background-position: center;\n  background-color: var(--soft);\n  background-image: url(\"/images/cta_bg.png\");\n}\n.Frontend .References .TestimonyBlock {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n.Frontend .References .TestimonyBlock .img {\n  margin-bottom: 20px;\n  transition: all 0.25s;\n}\n.Frontend .References .TestimonyBlock .img div {\n  width: 200px;\n  height: 200px;\n  border-radius: 50%;\n  transition: all 0.25s;\n}\n.Frontend .References .TestimonyBlock .title {\n  color: var(--green);\n  margin-bottom: 10px;\n  text-align: center;\n  font-size: var(--block-font-size);\n}\n.Frontend .References .TestimonyBlock .body {\n  font-size: 14px;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n.Frontend .References .TestimonyBlock .name {\n  font-size: 14px;\n  color: var(--white);\n  margin-bottom: 10px;\n  text-transform: uppercase;\n}\n.Frontend .References .TestimonyBlock .company {\n  font-size: 20px;\n  font-weight: 800;\n  color: var(--white);\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n@media (min-width: 1000px) {\n  .Frontend .References section.about img {\n    margin-bottom: 0;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

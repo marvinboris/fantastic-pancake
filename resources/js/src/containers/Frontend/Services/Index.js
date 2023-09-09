@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
-import PageTitle from '../../../components/Frontend/UI/Title/PageTitle';
 import SectionTitle from '../../../components/Frontend/UI/Title/SectionTitle';
 import ServiceBlock from '../../../components/Frontend/UI/Blocks/ServiceBlock';
 

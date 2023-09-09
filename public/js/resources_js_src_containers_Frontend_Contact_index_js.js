@@ -743,7 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 14px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 1.25rem;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

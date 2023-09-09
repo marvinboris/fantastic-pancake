@@ -1,36 +1,117 @@
-import React from 'react';
-import { DropdownItem, DropdownMenu, DropdownToggle, Navbar, Nav, UncontrolledDropdown } from 'reactstrap';
+import React from "react";
 import { useHistory } from "react-router-dom";
+import {
+    DropdownItem,
+    DropdownMenu,
+    DropdownToggle,
+    Navbar,
+    Nav,
+    UncontrolledDropdown,
+} from "reactstrap";
 
-import NavigationItem from './NavigationItem/NavigationItem';
+import NavigationItem from "./NavigationItem/NavigationItem";
 
-export default ({ light = false, font, toggleNavbar, cms = {}, categories = [], props }) => {
+export default ({
+    light = false,
+    font,
+    toggleNavbar,
+    cms = {},
+    categories = [],
+    props,
+}) => {
     const history = useHistory();
 
-    const categoryClickHandler = link => {
+    const categoryClickHandler = (link) => {
         toggleNavbar();
         history.push(link);
     };
 
-    return <Navbar dark={!light} light={light} expand className="NavigationItems position-static">
-        <Nav className="d-block d-lg-flex align-items-center" navbar>
-            <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/" icon="fas fa-home">{cms.menu.home}</NavigationItem>
-            <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/about">{cms.menu.about}</NavigationItem>
-            <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/services">{cms.menu.services}</NavigationItem>
-            <UncontrolledDropdown setActiveFromChild className='NavigationItem'>
-                <DropdownToggle tag="a" className={`nav-link text-${font}`} caret>
-                    {cms.menu.publications}
-                </DropdownToggle>
+    return (
+        <Navbar
+            dark={!light}
+            light={light}
+            expand
+            className="NavigationItems position-static"
+        >
+            <Nav className="d-block d-lg-flex align-items-center" navbar>
+                <NavigationItem
+                    toggleNavbar={toggleNavbar}
+                    font={font}
+                    href="/"
+                    icon="fas fa-home"
+                >
+                    {cms.menu.home}
+                </NavigationItem>
+                <NavigationItem
+                    toggleNavbar={toggleNavbar}
+                    font={font}
+                    href="/about"
+                >
+                    {cms.menu.about}
+                </NavigationItem>
+                <NavigationItem
+                    toggleNavbar={toggleNavbar}
+                    font={font}
+                    href="/services"
+                >
+                    {cms.menu.services}
+                </NavigationItem>
+                {categories.length ? (
+                    <UncontrolledDropdown
+                        setActiveFromChild
+                        className="NavigationItem"
+                    >
+                        <DropdownToggle
+                            tag="a"
+                            className={`nav-link text-${font}`}
+                            caret
+                        >
+                            {cms.menu.publications}
+                        </DropdownToggle>
 
-                <DropdownMenu>
-                    {categories.map(category =>
-                        <DropdownItem tag="a" key={JSON.stringify(category)} active={location.href === category.link} onClick={() => categoryClickHandler(category.link)}>{category.name}</DropdownItem>)}
-                </DropdownMenu>
-            </UncontrolledDropdown>
-            <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/references">{cms.menu.references}</NavigationItem>
-            <NavigationItem toggleNavbar={toggleNavbar} font={font} href="/contact">{cms.menu.contact}</NavigationItem>
-            <a href={`tel:${cms.menu.tel}`} className="tel btn btn-green"><i className='fas fa-phone' />{cms.menu.tel}</a>
-            <a href={cms.menu.freelance_link} target="_blank" className="freelance btn btn-blue"><i className='fas fa-external-link-alt' />{cms.menu.become_freelance}</a>
-        </Nav>
-    </Navbar>;
-}
+                        <DropdownMenu>
+                            {categories.map((category) => (
+                                <DropdownItem
+                                    tag="a"
+                                    key={JSON.stringify(category)}
+                                    active={location.href === category.link}
+                                    onClick={() =>
+                                        categoryClickHandler(category.link)
+                                    }
+                                >
+                                    {category.name}
+                                </DropdownItem>
+                            ))}
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
+                ) : null}
+                <NavigationItem
+                    toggleNavbar={toggleNavbar}
+                    font={font}
+                    href="/references"
+                >
+                    {cms.menu.references}
+                </NavigationItem>
+                <NavigationItem
+                    toggleNavbar={toggleNavbar}
+                    font={font}
+                    href="/contact"
+                >
+                    {cms.menu.contact}
+                </NavigationItem>
+                <a href={`tel:${cms.menu.tel}`} className="tel btn btn-green">
+                    <i className="fas fa-phone" />
+                    {cms.menu.tel}
+                </a>
+                <a
+                    href={cms.menu.freelance_link}
+                    target="_blank"
+                    className="freelance btn btn-blue"
+                >
+                    <i className="fas fa-external-link-alt" />
+                    {cms.menu.become_freelance}
+                </a>
+            </Nav>
+        </Navbar>
+    );
+};

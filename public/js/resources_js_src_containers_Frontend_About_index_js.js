@@ -766,33 +766,6 @@ var About = /*#__PURE__*/function (_Component) {
             })
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
-          className: "team",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
-            className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_7__["default"], _objectSpread({}, cms.team)), team.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)((react_owl_carousel2__WEBPACK_IMPORTED_MODULE_2___default()), {
-              ref: "team-carousel",
-              options: {
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  600: {
-                    items: 2
-                  },
-                  900: {
-                    items: 3
-                  },
-                  1200: {
-                    items: 4
-                  }
-                },
-                dots: false,
-                margin: 20
-              },
-              children: teamContent
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("section", {
           className: "contact",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
             className: "container",
@@ -1489,7 +1462,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 14px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 1.25rem;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
