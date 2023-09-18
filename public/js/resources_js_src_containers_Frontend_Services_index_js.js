@@ -109,43 +109,6 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ "./resources/js/src/components/Frontend/UI/Title/PageTitle/index.js":
-/*!**************************************************************************!*\
-  !*** ./resources/js/src/components/Frontend/UI/Title/PageTitle/index.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _PageTitle_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PageTitle.scss */ "./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function (_ref) {
-  var title = _ref.title,
-      subtitle = _ref.subtitle;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    className: "PageTitle",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "title",
-        children: title
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "subtitle",
-        children: subtitle
-      })]
-    })
-  });
-});
-
-/***/ }),
-
 /***/ "./resources/js/src/containers/Frontend/Services/index.js":
 /*!****************************************************************!*\
   !*** ./resources/js/src/containers/Frontend/Services/index.js ***!
@@ -158,13 +121,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _components_Frontend_UI_Title_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Frontend/UI/Title/PageTitle */ "./resources/js/src/components/Frontend/UI/Title/PageTitle/index.js");
-/* harmony import */ var _components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/Frontend/UI/Title/SectionTitle */ "./resources/js/src/components/Frontend/UI/Title/SectionTitle/index.js");
-/* harmony import */ var _components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/ServiceBlock */ "./resources/js/src/components/Frontend/UI/Blocks/ServiceBlock/index.js");
-/* harmony import */ var _store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../store/actions/frontend/services */ "./resources/js/src/store/actions/frontend/services.js");
-/* harmony import */ var _Services_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Services.scss */ "./resources/js/src/containers/Frontend/Services/Services.scss");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Frontend/UI/Title/SectionTitle */ "./resources/js/src/components/Frontend/UI/Title/SectionTitle/index.js");
+/* harmony import */ var _components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../components/Frontend/UI/Blocks/ServiceBlock */ "./resources/js/src/components/Frontend/UI/Blocks/ServiceBlock/index.js");
+/* harmony import */ var _store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../store/actions/frontend/services */ "./resources/js/src/store/actions/frontend/services.js");
+/* harmony import */ var _Services_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Services.scss */ "./resources/js/src/containers/Frontend/Services/Services.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -192,7 +154,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 
 
 
@@ -236,20 +197,20 @@ var Services = /*#__PURE__*/function (_Component) {
           _this$props$frontend$2 = _this$props$frontend$.services,
           services = _this$props$frontend$2 === void 0 ? [] : _this$props$frontend$2;
       var publicationsContent = services.map(function (service) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           className: "col-md-6 col-xxl-4",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_4__["default"], _objectSpread({}, service))
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_Frontend_UI_Blocks_ServiceBlock__WEBPACK_IMPORTED_MODULE_3__["default"], _objectSpread({}, service))
         }, JSON.stringify(service));
       });
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
         className: "Services",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("section", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("section", {
           className: "services",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
             className: "container",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_3__["default"], _objectSpread({}, cms.services)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_Frontend_UI_Title_SectionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], _objectSpread({}, cms.services)), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("p", {
               children: cms.services.description
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
               className: "row",
               children: publicationsContent
             })]
@@ -269,15 +230,15 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     get: function get() {
-      return dispatch((0,_store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_5__.getServices)());
+      return dispatch((0,_store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_4__.getServices)());
     },
     reset: function reset() {
-      return dispatch((0,_store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_5__.resetServices)());
+      return dispatch((0,_store_actions_frontend_services__WEBPACK_IMPORTED_MODULE_4__.resetServices)());
     }
   };
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(Services)));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(Services)));
 
 /***/ }),
 
@@ -440,30 +401,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 1.25rem;\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ".PageTitle {\n  position: relative;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-image: linear-gradient(var(--blue-80), var(--blue-80)), url(\"/images/african-african-american-at-at-symbol-bangkok-black-1457821-pxhere.com.jpg\");\n}\n.PageTitle::after {\n  top: 0;\n  left: 0;\n  content: \"\";\n  width: 100%;\n  z-index: -1;\n  height: 100%;\n  position: absolute;\n  background-color: var(--black);\n}\n.PageTitle .container {\n  display: flex;\n  padding-top: 80px;\n  padding-bottom: 80px;\n  align-items: center;\n  color: var(--white);\n  flex-direction: column;\n  justify-content: center;\n}\n.PageTitle .container .title {\n  font-size: 2rem;\n  font-weight: 700;\n  margin-bottom: 7px;\n  border-bottom: 0.5px solid var(--white);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".UI.ServiceBlock {\n  margin-bottom: 20px;\n}\n.UI.ServiceBlock .info {\n  display: flex;\n  overflow: hidden;\n  align-items: flex-start;\n}\n.UI.ServiceBlock .info .icon {\n  font-size: 56px;\n  color: var(--green);\n  padding-right: 14px;\n}\n.UI.ServiceBlock .info .text {\n  flex: 0 0 calc(100% - 84px);\n  max-width: calc(100% - 84px);\n}\n.UI.ServiceBlock .info .text .title {\n  color: var(--blue);\n  margin-bottom: 11.2px;\n  text-decoration: none;\n  font-size: var(--subtitle-font-size);\n}\n.UI.ServiceBlock .info .text .body {\n  width: 100%;\n  font-size: 0.875rem;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -519,35 +457,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_ServiceBlock_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss":
-/*!********************************************************************************!*\
-  !*** ./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_PageTitle_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!../../../../../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!../../../../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./PageTitle.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[7].oneOf[1].use[3]!./resources/js/src/components/Frontend/UI/Title/PageTitle/PageTitle.scss");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_PageTitle_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_2_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_7_oneOf_1_use_3_PageTitle_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

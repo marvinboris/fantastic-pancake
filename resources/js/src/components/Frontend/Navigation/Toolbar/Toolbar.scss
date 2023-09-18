@@ -7,7 +7,7 @@
 
     .top {
         display: none;
-        font-size: 1.25rem;
+        font-size: .75rem;
         background-color: var(--blue);
 
         .container {
@@ -101,7 +101,7 @@
             }
 
             &>.info {
-                padding: .5rem 1rem;
+                padding: .5rem .875rem;
                 text-align: center;
                 color: var(--white);
                 background-color: var(--blue);
