@@ -24,11 +24,8 @@ export const getContent = () => async (dispatch, getState) => {
                 const phoneRes = await fetch(CORS + 'http://country.io/phone.json', { method: 'GET', mode: 'cors' });
                 const namesRes = await fetch(CORS + 'http://country.io/names.json', { method: 'GET', mode: 'cors' });
 
-                let phone = await phoneRes.json();
-                let names = await namesRes.json();
-
-                phone = JSON.parse(phone.contents);
-                names = JSON.parse(names.contents);
+                const phone = await phoneRes.json();
+                const names = await namesRes.json();
 
                 countries = Object.keys(phone).map(key => ({ country: key, code: phone[key], name: names[key] }));
 
