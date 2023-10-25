@@ -39,17 +39,11 @@ class References extends Component {
                 references: { testimonies = [] },
             },
         } = this.props;
-        const lang = localStorage.getItem("lang");
 
         const testimoniesContent = testimonies.map((testimony) => (
-            <div key={JSON.stringify(testimony)} className="col-md-3">
+            <div key={JSON.stringify(testimony)} className="col-md-6">
                 <TestimonyBlock
-                    {...{
-                        ...testimony,
-                        company: testimony.company[lang],
-                        title: testimony.title[lang],
-                        body: testimony.body[lang],
-                    }}
+                    {...testimony}
                 />
             </div>
         ));
@@ -60,7 +54,7 @@ class References extends Component {
 
                 <section className="testimonies">
                     <div className="container">
-                        <SectionTitle {...cms.testimonies} />
+                        <SectionTitle centered {...cms.testimonies} />
 
                         <div className="col-12">
                             <div className="row">{testimoniesContent}</div>

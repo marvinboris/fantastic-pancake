@@ -46,7 +46,7 @@ class FrontendController extends Controller
 
     public function references()
     {
-        $testimonies = Testimony::orderBy('id', 'DESC')->whereIsActive(1)->get();
+        $testimonies = Partner::whereIsActive(1)->get();
 
         return response()->json([
             'testimonies' => $testimonies,

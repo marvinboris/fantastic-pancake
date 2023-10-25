@@ -383,15 +383,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
+
 function TestimonyBlock(_ref) {
-  var title = _ref.title,
-      body = _ref.body,
+  var link = _ref.link,
       name = _ref.name,
-      company = _ref.company,
+      title = _ref.title,
       photo = _ref.photo;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+    href: link,
     className: "TestimonyBlock",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "name",
+        children: name
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "title",
+        children: title
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "img",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "bg-img",
@@ -399,7 +408,7 @@ function TestimonyBlock(_ref) {
           backgroundImage: "url(\"".concat(photo, "\")")
         }
       })
-    })
+    })]
   });
 }
 
@@ -1971,7 +1980,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".Preloader body {\r\n    background-color: #222;\r\n}\r\n\r\n.Preloader #preloader {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.Preloader #loader {\r\n    display: block;\r\n    position: relative;\r\n    left: 50%;\r\n    top: 50%;\r\n    width: 150px;\r\n    height: 150px;\r\n    margin: -75px 0 0 -75px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #9370DB;\r\n    -webkit-animation: spin 2s linear infinite;\r\n    animation: spin 2s linear infinite;\r\n}\r\n\r\n.Preloader #loader:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 5px;\r\n    left: 5px;\r\n    right: 5px;\r\n    bottom: 5px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #BA55D3;\r\n    -webkit-animation: spin 3s linear infinite;\r\n    animation: spin 3s linear infinite;\r\n}\r\n\r\n.Preloader #loader:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 15px;\r\n    right: 15px;\r\n    bottom: 15px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #FF00FF;\r\n    -webkit-animation: spin 1.5s linear infinite;\r\n    animation: spin 1.5s linear infinite;\r\n}\r\n\r\n@-webkit-keyframes spin {\r\n    0% {\r\n        transform: rotate(0deg);\r\n    }\r\n    100% {\r\n        transform: rotate(360deg);\r\n    }\r\n}\r\n\r\n@keyframes spin {\r\n    0% {\r\n        transform: rotate(0deg);\r\n    }\r\n    100% {\r\n        transform: rotate(360deg);\r\n    }\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".Preloader body {\r\n    background-color: #222;\r\n}\r\n\r\n.Preloader #preloader {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.Preloader #loader {\r\n    display: block;\r\n    position: relative;\r\n    left: 50%;\r\n    top: 50%;\r\n    width: 150px;\r\n    height: 150px;\r\n    margin: -75px 0 0 -75px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #9370DB;\r\n    animation: spin 2s linear infinite;\r\n}\r\n\r\n.Preloader #loader:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 5px;\r\n    left: 5px;\r\n    right: 5px;\r\n    bottom: 5px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #BA55D3;\r\n    animation: spin 3s linear infinite;\r\n}\r\n\r\n.Preloader #loader:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 15px;\r\n    left: 15px;\r\n    right: 15px;\r\n    bottom: 15px;\r\n    border-radius: 50%;\r\n    border: 3px solid transparent;\r\n    border-top-color: #FF00FF;\r\n    animation: spin 1.5s linear infinite;\r\n}\r\n\r\n@keyframes spin {\r\n    0% {\r\n        transform: rotate(0deg);\r\n    }\r\n    100% {\r\n        transform: rotate(360deg);\r\n    }\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1995,7 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".UI.PublicationBlock {\n  height: 360px;\n  border-radius: 0;\n  overflow: hidden;\n  position: relative;\n  margin-bottom: 17.5px;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n.UI.PublicationBlock .date {\n  top: 0;\n  right: 0;\n  z-index: 1;\n  font-size: 17.5px;\n  line-height: 14px;\n  padding-top: 10px;\n  text-align: right;\n  position: absolute;\n  padding-right: 10px;\n}\n.UI.PublicationBlock .date .day {\n  font-weight: 800;\n  line-height: 21px;\n  font-size: 26.25px;\n}\n.UI.PublicationBlock .date::before {\n  top: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  border: 0 solid transparent;\n  border-left-width: 120px;\n  border-top: 90px solid var(--white);\n}\n.UI.PublicationBlock .text {\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  padding: 24px;\n  display: flex;\n  font-size: 12.25px;\n  position: absolute;\n  flex-direction: column;\n  justify-content: flex-end;\n  background-color: var(--soft);\n}\n.UI.PublicationBlock .text .title {\n  display: block;\n  font-weight: 700;\n  color: var(--green);\n  font-size: 21.875px;\n  transition: all 0.25s;\n  margin-bottom: 0.75rem;\n  text-decoration: none;\n}\n.UI.PublicationBlock .text .title:hover {\n  color: var(--dark);\n}\n.UI.PublicationBlock .text .body {\n  overflow: hidden;\n  color: var(--dark);\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  margin-bottom: 0.75rem;\n  max-width: -webkit-fit-content;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  -webkit-box-orient: vertical;\n}\n.UI.PublicationBlock .text .read-more {\n  font-weight: 700;\n  color: var(--green);\n  transition: all 0.25s;\n}\n.UI.PublicationBlock .text .read-more:hover {\n  color: var(--dark);\n}\n.UI.PublicationBlock .text .read-more i {\n  margin-left: 4px;\n}\n\n@media (min-width: 800px) {\n  .UI.PublicationBlock .date {\n    font-size: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .date .day {\n    font-size: var(--block-font-size-md);\n    line-height: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .text {\n    padding: 24px;\n  }\n  .UI.PublicationBlock .text .title {\n    font-size: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .text .read-more i {\n    margin-left: 6px;\n  }\n}\n@media (min-width: 1280px) {\n  .UI.PublicationBlock .date {\n    font-size: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .date .day {\n    font-size: var(--block-font-size);\n    line-height: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .text {\n    padding: 24px;\n  }\n  .UI.PublicationBlock .text .title {\n    font-size: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .text .read-more i {\n    margin-left: 8px;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".UI.PublicationBlock {\n  height: 360px;\n  border-radius: 0;\n  overflow: hidden;\n  position: relative;\n  margin-bottom: 17.5px;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n.UI.PublicationBlock .date {\n  top: 0;\n  right: 0;\n  z-index: 1;\n  font-size: 17.5px;\n  line-height: 14px;\n  padding-top: 10px;\n  text-align: right;\n  position: absolute;\n  padding-right: 10px;\n}\n.UI.PublicationBlock .date .day {\n  font-weight: 800;\n  line-height: 21px;\n  font-size: 26.25px;\n}\n.UI.PublicationBlock .date::before {\n  top: 0;\n  right: 0;\n  width: 0;\n  height: 0;\n  content: \"\";\n  z-index: -1;\n  position: absolute;\n  border: 0 solid transparent;\n  border-left-width: 120px;\n  border-top: 90px solid var(--white);\n}\n.UI.PublicationBlock .text {\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  padding: 24px;\n  display: flex;\n  font-size: 12.25px;\n  position: absolute;\n  flex-direction: column;\n  justify-content: flex-end;\n  background-color: var(--soft);\n}\n.UI.PublicationBlock .text .title {\n  display: block;\n  font-weight: 700;\n  color: var(--green);\n  font-size: 21.875px;\n  transition: all 0.25s;\n  margin-bottom: 0.75rem;\n  text-decoration: none;\n}\n.UI.PublicationBlock .text .title:hover {\n  color: var(--dark);\n}\n.UI.PublicationBlock .text .body {\n  overflow: hidden;\n  color: var(--dark);\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  margin-bottom: 0.75rem;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  -webkit-box-orient: vertical;\n}\n.UI.PublicationBlock .text .read-more {\n  font-weight: 700;\n  color: var(--green);\n  transition: all 0.25s;\n}\n.UI.PublicationBlock .text .read-more:hover {\n  color: var(--dark);\n}\n.UI.PublicationBlock .text .read-more i {\n  margin-left: 4px;\n}\n\n@media (min-width: 800px) {\n  .UI.PublicationBlock .date {\n    font-size: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .date .day {\n    font-size: var(--block-font-size-md);\n    line-height: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .text {\n    padding: 24px;\n  }\n  .UI.PublicationBlock .text .title {\n    font-size: var(--subtitle-font-size-md);\n  }\n  .UI.PublicationBlock .text .read-more i {\n    margin-left: 6px;\n  }\n}\n@media (min-width: 1280px) {\n  .UI.PublicationBlock .date {\n    font-size: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .date .day {\n    font-size: var(--block-font-size);\n    line-height: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .text {\n    padding: 24px;\n  }\n  .UI.PublicationBlock .text .title {\n    font-size: var(--subtitle-font-size);\n  }\n  .UI.PublicationBlock .text .read-more i {\n    margin-left: 8px;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

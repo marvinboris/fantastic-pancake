@@ -55,8 +55,6 @@ class Layout extends Component {
                             <div className='col-lg-6 contact'>
                                 <SectionTitle {...footer.top.contact} />
 
-                                <p>{footer.top.contact.listen}</p>
-
                                 <div className='content'>
                                     <div><i className='fas fa-fw fa-building' />{footer.top.contact.address}</div>
                                     <div><i className='fas fa-fw fa-phone' />{footer.top.contact.phone}</div>
@@ -73,10 +71,6 @@ class Layout extends Component {
                         <div>
                             <div>© {(new Date()).getFullYear()} <Link className='app-name' to='/'>{global.app_name}</Link></div>
                             <div>{footer.bottom.all_rights} {global.company_name}</div>
-                        </div>
-
-                        <div>
-                            <Logo />
                         </div>
 
                         <div className='social-networks'>{footer.bottom.social_networks.map(social_network => <a key={JSON.stringify(social_network)} href={social_network.link} target='_blank'><i className={'fab fa-' + social_network.icon} /></a>)}</div>

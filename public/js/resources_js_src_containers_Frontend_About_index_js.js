@@ -589,11 +589,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var initialState = {
-  home_name: '',
-  home_email: '',
-  contact_name: '',
-  contact_email: '',
-  contact_message: ''
+  home_name: "",
+  home_email: "",
+  contact_name: "",
+  contact_email: "",
+  contact_message: ""
 };
 
 var About = /*#__PURE__*/function (_Component) {
@@ -670,7 +670,7 @@ var About = /*#__PURE__*/function (_Component) {
           contact_name = _this$state.contact_name,
           contact_email = _this$state.contact_email,
           contact_message = _this$state.contact_message;
-      var lang = localStorage.getItem('lang');
+      var lang = localStorage.getItem("lang");
       var servicesContent = services.map(function (service) {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
           className: "col-md-6 col-xxl-4",
@@ -711,56 +711,34 @@ var About = /*#__PURE__*/function (_Component) {
                         __html: cms.about.mission
                       }
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
                     className: "col-md-6",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
                       dangerouslySetInnerHTML: {
                         __html: cms.about.values
                       }
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-                      dangerouslySetInnerHTML: {
-                        __html: cms.about.vision
-                      }
-                    })]
+                    })
                   })]
                 })]
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                className: "col-md-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-                  dangerouslySetInnerHTML: {
-                    __html: cms.about.expertise
-                  }
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                className: "col-md-4",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-                  dangerouslySetInnerHTML: {
-                    __html: cms.about.services
-                  }
-                })
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
                 className: "col-12",
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                  dangerouslySetInnerHTML: {
-                    __html: cms.about.supports.title
-                  }
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                  className: "row",
-                  children: cms.about.supports.elements.map(function (element) {
-                    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                      className: "col-md-4",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
+                  className: "row justify-content-center",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+                    className: "col-md-4",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
                       dangerouslySetInnerHTML: {
-                        __html: element
+                        __html: cms.about.expertise
                       }
-                    }, element);
-                  })
-                })]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
-                className: "col-12",
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
-                  dangerouslySetInnerHTML: {
-                    __html: cms.about.details
-                  }
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
+                    className: "col-md-4",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("p", {
+                      dangerouslySetInnerHTML: {
+                        __html: cms.about.services
+                      }
+                    })
+                  })]
                 })
               })]
             })
@@ -785,7 +763,7 @@ var About = /*#__PURE__*/function (_Component) {
                         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
                           className: "icon",
                           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
-                            className: 'fas fa-' + block.icon
+                            className: "fas fa-" + block.icon
                           })
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("div", {
                           className: "text",
@@ -837,7 +815,7 @@ var About = /*#__PURE__*/function (_Component) {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
                     className: "submit",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("button", {
-                      className: 'btn btn-blue' + (contact_loading ? ' btn-disabled' : ''),
+                      className: "btn btn-blue" + (contact_loading ? " btn-disabled" : ""),
                       children: [cms.contact.submit, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
                         className: "fas fa-paper-plane"
                       })]
@@ -884,7 +862,7 @@ var About = /*#__PURE__*/function (_Component) {
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("div", {
                     className: "submit",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsxs)("button", {
-                      className: 'btn btn-green' + (home_loading ? ' btn-disabled' : ''),
+                      className: "btn btn-green" + (home_loading ? " btn-disabled" : ""),
                       children: [cms.newsletter.submit, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_14__.jsx)("i", {
                         className: "fas fa-paper-plane"
                       })]

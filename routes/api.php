@@ -169,7 +169,7 @@ Route::prefix('content')->name('content.')->group(function () {
             'pages' => $cmsFile['pages'][$abbr],
         ];
         $languages = Language::all();
-        $services = Service::whereIsActive(1)->take(6)->get();
+        $services = Service::all();
         $categories = PublicationCategory::all();
 
         return response()->json([

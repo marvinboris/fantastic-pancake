@@ -794,10 +794,9 @@
                             "view_all": "Voir toutes les de gammes de services"
                         },
                         "testimonies": {
-                            "head": "Des opinions sur nos services",
                             "title": {
-                                "top": "Ils nous font",
-                                "bottom": "confiance"
+                                "left": "Ils nous font",
+                                "right": "confiance"
                             }
                         },
                         "quote": {
@@ -874,11 +873,10 @@
                             },
                             "photo": "/images/achievement-african-african-american-bangkok-black-bridge-1567129-pxhere.com.jpg",
                             "description": "<strong>MAHOL CONSULTING</strong> est un cabinet de conseil en management des organisations, basé à Douala Bonapriso et qui est spécialisé dans la structuration, l'amélioration des processus et la réduction des coûts.",
-                            "vision": "Notre <strong>vision</strong> est de rendre le conseil accessible à tous et sans délai",
-                            "values": "Nous mettons un point d'honneur à être, en toutes circonstances objectifs et honnêtes dans les résultats que nous délivrons. Nous sommes un cabinet guidé par des valeurs fortes:<ul><li><strong>Culte de l'excellence:</strong> Une équipe d'experts professionnels et dynamiques, orientés résultats</li><li><strong>Transparence:</strong> Clarté, sécurité</li><li><strong>Proximité client:</strong> Ecoute</li></ul>",
+                            "values": "Nous mettons un point d'honneur à être, en toutes circonstances objectifs et honnêtes dans les résultats que nous délivrons. <br /><br />Nos <strong>valeurs</strong>:<ul><li><strong>Culte de l'excellence:</strong> Une équipe d'experts professionnels et dynamiques, orientés résultats</li><li><strong>Transparence:</strong> Clarté, sécurité</li><li><strong>Proximité client:</strong> Ecoute</li></ul>",
                             "mission": "Notre <strong>mission</strong> est de faciliter, organiser et sécuriser à moindre coût et sans délai, la rencontre entre des professionnels en capacités d'une part et d'autre part des organisations en besoin d'accompagnement pour l'amélioration de leurs performances.",
-                            "expertise": "Nos <strong>domaines de compétences</strong> :<br />• Gouvernance d’entreprise<br />• Management des organisations et des projets<br />• Management des systèmes d’information et automatisation des procédés<br />• Management du capital humain<br />• Comptabilité finances et fiscalité<br />• Développement commercial<br />• Marketing et Communication<br />• Management de la chaine logistique<br />• Droit des affaires<br />• Douane et Transit",
-                            "services": "Nos <strong>services</strong> :<br />▪ Conception et mise en œuvre des projets événementiels (CMOPE)<br />▪ Conception et réalisation des applications de gestion<br />▪ Recrutement<br />▪ Animation des plates formes digitales et sites internet<br />▪ Formation finance pour non-financiers<br />▪ Conception et réalisation des supports de communication institutionnelle<br />▪ Création et mise en œuvre d’une entreprise",
+                            "expertise": "Nos <strong>domaines de compétences</strong> :<ul><li>Gouvernance d’entreprise</li><li>Management des organisations et des projets</li><li>Management des systèmes d’information et automatisation des procédés</li><li>Management du capital humain</li><li>Comptabilité finances et fiscalité</li><li>Développement commercial</li><li>Marketing et Communication</li><li>Management de la chaine logistique</li><li>Droit des affaires</li><li>Douane et Transit</li></ul>",
+                            "services": "Nos <strong>services</strong> :<ul><li>Conception et mise en œuvre des projets événementiels (CMOPE)</li><li>Conception et réalisation des applications de gestion</li><li>Recrutement</li><li>Animation des plates formes digitales et sites internet</li><li>Formation finance pour non-financiers</li><li>Conception et réalisation des supports de communication institutionnelle</li><li>Création et mise en œuvre d’une entreprise</li></ul>",
                             "supports": {
                                 "title": "Nos <strong>supports de communication</strong> :",
                                 "elements": [
@@ -908,7 +906,7 @@
                                 "left": "Prenez",
                                 "right": "contact"
                             },
-                            "description": "Visitez notre agence ou envoyez-nous simplement un e-mail quand vous le souhaitez. Si vous avez des questions, n'hésitez pas à nous contacter.",
+                            "description": "Pour toutes questions ou informations, veuillez remplir ce formulaire de renseignement.",
                             "centered": "true",
                             "name": "Nom",
                             "email": "Adresse mail",
@@ -982,10 +980,9 @@
                         "title": "Nos références",
                         "subtitle": "Ils nous font confiance",
                         "testimonies": {
-                            "head": "Des opinions sur nos services",
                             "title": {
-                                "top": "Ils nous font",
-                                "bottom": "confiance"
+                                "left": "Ils nous font",
+                                "right": "confiance"
                             }
                         }
                     },
@@ -995,10 +992,9 @@
                         "written_by": "Ecrit par",
                         "loading": "Chargement en cours...",
                         "services": {
-                            "head": "Comment pouvons-nous vous accompagner",
                             "title": {
-                                "left": "Toutes nos",
-                                "right": "gammes de services"
+                                "left": "Nos gammes",
+                                "right": "de services"
                             },
                             "centered": "true"
                         }
@@ -1790,7 +1786,6 @@
                         },
                         "services": {
                             "icon": "concierge-bell",
-                            "head": "How can we help you",
                             "title": {
                                 "top": "Service",
                                 "bottom": "lines"
@@ -1799,10 +1794,9 @@
                             "view_all": "View all services"
                         },
                         "testimonies": {
-                            "head": "Great reviews of our services",
                             "title": {
-                                "top": "Trusted by",
-                                "bottom": "Big Names"
+                                "left": "Trusted by",
+                                "right": "Big Names"
                             }
                         },
                         "quote": {
@@ -1879,11 +1873,10 @@
                             },
                             "photo": "/images/achievement-african-african-american-bangkok-black-bridge-1567129-pxhere.com.jpg",
                             "description": "MAHOL CONSULTING is a consulting firm located in Douala, Cameroon, specializing in organizational management and corporate financial engineering.",
-                            "vision": "Our <strong>vision</strong> is to make advice accessible to everyone and without delay",
-                            "values": "We make it a point of honor to be, in all circumstances, objective and honest in the results we deliver. We are a firm guided by strong values:<ul><li><strong>Cult of excellence:</strong> A team of professional and dynamic experts, results-oriented</li><li><strong> Transparency:</strong> Clarity, security</li><li><strong>Client proximity:</strong> Listening</li></ul>",
+                            "values": "We make it a point of honor to be, in all circumstances, objective and honest in the results we deliver. <br /><br />Our <strong>values</strong>:<ul><li><strong>Cult of excellence:</strong> A team of professional and dynamic experts, results-oriented</li><li><strong> Transparency:</strong> Clarity, security</li><li><strong>Client proximity:</strong> Listening</li></ul>",
                             "mission": "Our <strong>mission</strong> is to facilitate, organize and secure at the lowest cost and without delay, the meeting between professionals in capacity on the one hand and on the other hand organizations in need of support for improvement. of their performance.",
-                            "expertise": "Our <strong>areas of expertise</strong>:<br />• Corporate governance<br />• Management of organizations and projects<br />• Management of information systems and automation processes<br />• Human capital management<br />• Accounting, finance and taxation<br />• Business development<br />• Marketing and Communication<br />• Supply chain management<br />• Business Law<br />• Customs and Transit",
-                            "services": "Our <strong>services</strong>:<br />▪ Design and implementation of event projects (CMOPE)<br />▪ Design and implementation of management applications<br />▪ Recruitment< br />▪ Animation of digital platforms and websites<br />▪ Finance training for non-financiers<br />▪ Design and production of institutional communication media<br />▪ Creation and implementation of a company ",
+                            "expertise": "Our <strong>areas of expertise</strong>:<ul><li>Corporate governance</li><li>Management of organizations and projects</li><li>Management of information systems and automation processes</li><li>Human capital management</li><li>Accounting, finance and taxation</li><li>Business development</li><li>Marketing and Communication</li><li>Supply chain management</li><li>Business Law</li><li>Customs and Transit</li></ul>",
+                            "services": "Our <strong>services</strong>:<ul><li>Design and implementation of event projects (CMOPE)</li><li>Design and implementation of management applications</li><li>Recruitment< br />▪ Animation of digital platforms and websites</li><li>Finance training for non-financiers</li><li>Design and production of institutional communication media</li><li>Creation and implementation of a company</li></url>",
                             "supports": {
                                 "title": "Our <strong>communication media</strong>:",
                                 "elements": [
@@ -1987,10 +1980,9 @@
                         "title": "Our references",
                         "subtitle": "Trusted by Big Names",
                         "testimonies": {
-                            "head": "Great reviews of our services",
                             "title": {
-                                "top": "Trusted by",
-                                "bottom": "Big Names"
+                                "left": "Trusted by",
+                                "right": "Big Names"
                             }
                         }
                     },
